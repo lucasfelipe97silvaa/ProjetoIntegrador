@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Menustyled} from '../../Components/Header/menu.styled'
 
 const Conteiner = styled.div`
   width: 100vw;
@@ -20,6 +21,7 @@ const Cabecalho = styled.div`
 `
 const Menu = styled.div`
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -45,34 +47,21 @@ const Button = styled.button`
     height: 30px;
 `
 
-const ConteinerItens = styled.div`
-    width: 10px;
-    height: 10px;
-    
-    
-`
 
 export default function Header() {
   return (
-  <Conteiner>
     <Conteiner>
-        <Cabecalho>
-          <Input type="search" placeholder='Digite o nome do produto que procura...'></Input>
-          <Button></Button>
-          <Button></Button>
-        </Cabecalho>
-      </Conteiner>   
-      
-      <Conteiner>
+        <Conteiner>
+          <Thubnail scr=''/>
+          <Cabecalho>
+              <Input type="search" placeholder='Digite o nome do produto que procura...'></Input>
+              <Button></Button>
+              <Button></Button>
+          </Cabecalho>
+        </Conteiner>    
         <Menu>
-            <ConteinerItens>Pneu</ConteinerItens>
-            <ConteinerItens>Lumbrificante</ConteinerItens>
-            <ConteinerItens>acessorio </ConteinerItens>
-            <ConteinerItens>acessorio </ConteinerItens>
-            <ConteinerItens>Mecanica</ConteinerItens>
-            <ConteinerItens>Ofertas</ConteinerItens>
+          <Menustyled/> 
         </Menu>
-    </Conteiner>
     </Conteiner>
   )
 }
