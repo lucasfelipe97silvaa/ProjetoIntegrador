@@ -40,7 +40,7 @@ function Cadastrar(){
     function onSubmit(ev){
         ev.preventDefault();
         
-        const url = '/tenis';
+        const url = '/produtos';
 
         api.post(url, values)
         .then(() => {

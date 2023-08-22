@@ -13,11 +13,16 @@ const ItemMenu = styled.ul`
     vertical-align: middle;
     align-items: center;
     gap:120px;
+    list-style-type: none;
 `
 const PropsLi = styled.li`
     &:hover{
         display: block;
     }
+`
+const Link = styled.a`
+    text-decoration: dashed;
+    color: black;
 `
 
 export function Menustyled() {
@@ -25,12 +30,12 @@ export function Menustyled() {
     <Conteiner>
             <ItemMenu>
             
-                <PropsLi>Pneus</PropsLi>
-                <PropsLi>Lubrificantes</PropsLi>
-                <PropsLi>Acessorios <br /> Interno </PropsLi>
-                <PropsLi> Acessorios <br /> Externos</PropsLi>
-                <PropsLi>Mecanica</PropsLi>
-                <PropsLi>Ofertas</PropsLi>
+            <Link><PropsLi>Pneus</PropsLi></Link>
+            <Link><PropsLi>Lubrificantes</PropsLi></Link>
+            <Link><PropsLi>Acessorios <br /> Interno </PropsLi></Link>
+            <Link><PropsLi> Acessorios <br /> Externos</PropsLi></Link>
+            <Link><PropsLi>Mecanica</PropsLi></Link>
+            <   Link><PropsLi>Ofertas</PropsLi></Link>
             
         </ItemMenu>
     </Conteiner>

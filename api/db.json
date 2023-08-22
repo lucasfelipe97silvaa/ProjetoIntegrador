@@ -1,0 +1,27 @@
+{
+    
+    "produtos":[
+    {
+        "id": 1,
+        "title": "",
+        "image": "",
+        "price": 0,
+        "url": ""
+
+      },
+      {
+        "id": 2,
+        "title": "",
+        "image": "",
+        "price": 0,
+        "url": ""
+      },
+      {
+        "id": 3,
+        "title": "",
+        "image": "",
+        "price": 0,
+        "url": ""
+      }
+    ]
+}

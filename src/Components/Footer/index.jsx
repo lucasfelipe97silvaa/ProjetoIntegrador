@@ -6,7 +6,7 @@ const FooterColor = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 100px;
-  background-color: grey;
+  background-color: #DDDDDD;
   justify-content: center;
 
 `
@@ -18,7 +18,7 @@ const FooterMenu = styled.div`
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: yellow;
+    background-color:#FFC004;
     
 
 `

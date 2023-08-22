@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './pages/Home';
+import Root from './routes';
 
 
 
@@ -8,8 +9,7 @@ function App() {
 
   return (
     <>
-
-    <Home></Home>
+    <Root></Root>
     </>
   )
 }
