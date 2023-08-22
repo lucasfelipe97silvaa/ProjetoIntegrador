@@ -10,6 +10,11 @@ const Conteiner = styled.div`
   
 
 `
+const ConteinerGeral = styled.main`
+  width: 100vw;
+  height: 100px;
+  margin-bottom: 60px;
+`
 const Cabecalho = styled.div`
   display: flex;
   justify-content: space-between;
@@ -50,7 +55,7 @@ const Button = styled.button`
 
 export default function Header() {
   return (
-    <Conteiner>
+    <ConteinerGeral>
         <Conteiner>
           <Thubnail scr=''/>
           <Cabecalho>
@@ -62,6 +67,6 @@ export default function Header() {
         <Menu>
           <Menustyled/> 
         </Menu>
-    </Conteiner>
+    </ConteinerGeral>
   )
 }
