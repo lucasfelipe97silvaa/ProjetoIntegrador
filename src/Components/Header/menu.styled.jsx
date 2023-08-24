@@ -12,8 +12,9 @@ const ItemMenu = styled.ul`
     flex-direction: row;
     vertical-align: middle;
     align-items: center;
-    gap:120px;
+    gap:150px;
     list-style-type: none;
+    margin-right: 50px;
 `
 const PropsLi = styled.li`
     &:hover{
@@ -21,6 +22,8 @@ const PropsLi = styled.li`
     }
 `
 const Link = styled.a`
+    display: flex;
+    /* justify-content: space-around; */
     text-decoration: dashed;
     color: black;
 `

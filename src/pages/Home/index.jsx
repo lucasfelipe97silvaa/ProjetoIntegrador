@@ -5,19 +5,20 @@ import Imagem from '../../../public/image/Rectangle 160.svg'
 
 const Thubnail = styled.img`
   width: 80vw;
-  height: 300px ;
+  height: auto ;
   /* margin-bottom:50px ; */
-  margin-left: 100px; 
+  margin-left: 150px; 
+  border: none;
 `
 
 
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 80vw;
   height: 400px;
   margin-top: 30px;
-
+  margin-left: 150px;
 `
 
 const ImagemContainer = styled.img`
@@ -35,8 +36,19 @@ const ContainerMenu = styled.div`
     background-color: #FFC004;
     border-radius: 15px;
 `
-
-
+const ConteinerImagem = styled.div`
+  display: grid ;
+  grid-template-columns:  10% 100px 40%;
+  grid-template-rows: 50px 50px 100px;
+  grid-column-gap:96px;
+  grid-row-gap:47px;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  `
+const Div = styled.div`
+  background-color: black;
+`
 
 export default function Home() {
   return (
@@ -49,11 +61,26 @@ export default function Home() {
         <ContainerMenu>
           <ImagemContainer src={Imagem}/>
         </ContainerMenu>
-        <ContainerMenu/>
-        <ContainerMenu/>
-        <ContainerMenu/>
-        <ContainerMenu/>
+        <ContainerMenu>
+          <ImagemContainer src={Imagem}/>
+        </ContainerMenu>
+        <ContainerMenu>
+          <ImagemContainer src={Imagem}/>
+        </ContainerMenu>
+        <ContainerMenu>
+          <ImagemContainer src={Imagem}/>
+        </ContainerMenu>
+        <ContainerMenu>
+          <ImagemContainer src={Imagem}/>
+        </ContainerMenu>
     </Container>
+    <ConteinerImagem>
+      <Div></Div>
+      <Div></Div>
+      <Div></Div>
+      <Div></Div>
+      <Div></Div>
+    </ConteinerImagem>
     </>
   )
 }

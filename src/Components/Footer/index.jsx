@@ -23,7 +23,7 @@ const FooterMenu = styled.div`
 
 `
 const FooterConteiner = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100px;
   margin-top: 300px;
   

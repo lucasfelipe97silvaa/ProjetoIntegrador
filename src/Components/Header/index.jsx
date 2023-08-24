@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {Menustyled} from '../../Components/Header/menu.styled'
 
 const Conteiner = styled.div`
-  width: 100vw;
+  width: 98.9vw;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ const Conteiner = styled.div`
 
 `
 const ConteinerGeral = styled.main`
-  width: 100vw;
+  width: 100%;
   height: 100px;
   margin-bottom: 60px;
 `

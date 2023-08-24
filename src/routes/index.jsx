@@ -5,14 +5,16 @@ import NotFound from "../pages/NotFound"
 import Home from '../pages/Home'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
+import Detalhes from '../pages/Det-produtos'
 
 const Root = () => {
     return(
         <Router>
             <Header/>
                 <Routes>
-                    <Route path="/" element={<Home/>}/>  
+                    <Route path="/" element={<Home/>}/>
                     <Route path="administrar/cadastrar" element={<Cadastrar/>}/>  
+                    <Route path="produto/detalhes_produtos" element={<Detalhes/>}/>  
                     <Route path="*" element={<NotFound/>}/> 
                 </Routes>
             <Footer/>
