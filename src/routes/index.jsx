@@ -6,6 +6,7 @@ import Home from '../pages/Home'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Detalhes from '../pages/Det-produtos'
+import Finalizacao from '../pages/Finalização';
 
 const Root = () => {
     return(
@@ -15,6 +16,7 @@ const Root = () => {
                     <Route path="/" element={<Home/>}/>
                     <Route path="administrar/cadastrar" element={<Cadastrar/>}/>  
                     <Route path="produto/detalhes_produtos" element={<Detalhes/>}/>  
+                    <Route path="produto/finalizar" element={<Finalizacao/>}/>  
                     <Route path="*" element={<NotFound/>}/> 
                 </Routes>
             <Footer/>

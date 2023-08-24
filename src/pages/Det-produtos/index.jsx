@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import ListDetalhes from '../../Components/Detalhes'
 
 const ConteinerGlobal = styled.div`
     width: 100%;
@@ -14,7 +15,7 @@ const ConteinerGlobal = styled.div`
 export default function Detalhes() {
   return (
     <>
-        <ConteinerGlobal></ConteinerGlobal>
+        <ListDetalhes></ListDetalhes>
     </>
   )
 }
