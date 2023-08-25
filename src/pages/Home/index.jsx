@@ -80,18 +80,18 @@ export default function Home() {
         </ContainerMenu>
     </Container>
     <Container>
-    <ConteinerImagem>
-      <Div></Div>
-      <Div></Div>
-      <Div></Div>
-      <Div></Div>
-      <Div></Div>
-    </ConteinerImagem>
+        <ConteinerImagem>
+            <Div></Div>
+            <Div></Div>
+            <Div></Div>
+            <Div></Div>
+            <Div></Div>
+        </ConteinerImagem>
     </Container>
     <Container>
-    <ProdutoHome></ProdutoHome>
-    <ProdutoHome></ProdutoHome>
-    <ProdutoHome></ProdutoHome>
+      <ProdutoHome></ProdutoHome>
+      <ProdutoHome></ProdutoHome>
+      <ProdutoHome></ProdutoHome>
     </Container>
     </>
   )

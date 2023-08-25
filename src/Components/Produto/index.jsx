@@ -78,18 +78,15 @@ export default function ProdutoHome({imagemHome}) {
   return (
     <>   
       <ItemConteiner>
-        
         {/* <Link href={imagemHome.url} target='_blank'> */}
           <CapaProduto src="https://wx.mlcdn.com.br/ponzi/production/portaldalu/90603_01.jpg"/>
-          
           <Conteiner>
-          <Title>Driver Selenium D220TI 80w Rms 8 Ohms Diafragma Titânio</Title>
-          <Price>R$50,00</Price>
-          <Title>a vísta</Title>
-          <ConteinerButton>
-          <Button onClick={''}>Comprar</Button>
-
-          </ConteinerButton>
+            <Title>Driver Selenium D220TI 80w Rms 8 Ohms Diafragma Titânio</Title>
+            <Price>R$50,00</Price>
+            <Title>a vísta</Title>
+            <ConteinerButton>
+              <Button onClick={''}>Comprar</Button>
+            </ConteinerButton>
           </Conteiner>
         {/* </Link> */}
       </ItemConteiner>
