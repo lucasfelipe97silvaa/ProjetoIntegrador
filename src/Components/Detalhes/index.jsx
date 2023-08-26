@@ -84,12 +84,13 @@ const Descricao = styled.p`
     margin: 20px;
 `
 const ConteinerSugestao = styled.div`   
-    width: 100%;
-    height:200px;
-    display: flex;
-    margin-top:60px ; 
-    justify-content: space-around;
-    
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 200px;
+  gap:30px;
+  margin: 40px;
+  margin-left: 150px;   
 `
 const Title = styled.p`
     font-size: 30px;
@@ -111,7 +112,7 @@ export default function ListDetalhes() {
             <CompraInConteiner></CompraInConteiner>
             <ConteinerButton>
                 <ButtonCarrinho/>
-                <Button onclick={''}/>
+                <Button/>
                 <ButtonCarrinho/>
             </ConteinerButton>
         </ConteinerCompra>
@@ -127,6 +128,7 @@ export default function ListDetalhes() {
     </ConteinerDescricao>
     <Title>Sugestões de produção:</Title>
     <ConteinerSugestao>
+        <ProdutoHome/>
         <ProdutoHome/>
         <ProdutoHome/>
         <ProdutoHome/>
