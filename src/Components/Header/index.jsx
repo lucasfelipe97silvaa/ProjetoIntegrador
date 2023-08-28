@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Menustyled} from '../../Components/Header/menu.styled'
 import { FaUser, FaCartPlus,FaSistrix} from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 const Conteiner = styled.div`
   width: 98.9vw;
@@ -96,7 +97,9 @@ export default function Header() {
   return (
     <ConteinerGeral>
         <Conteiner>
-          <Thubnail src="https://logosmarcas.net/wp-content/uploads/2021/06/Bentley-1919-Presente.png"></Thubnail>
+          <Link to={"/"}>
+            <Thubnail src="https://logosmarcas.net/wp-content/uploads/2021/06/Bentley-1919-Presente.png"></Thubnail>
+          </Link>
           <Cabecalho>
               <Input type="search" placeholder='Digite o nome do produto que procura...'></Input>
               <Button><FaSistrix/></Button>

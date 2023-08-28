@@ -2,26 +2,36 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CapaProduto = styled.img`
-  width: 100%;
-  height: 200px;
+  width: 175px;
+  height: 100%;
   border: 0;
   vertical-align: middle;
   float: left;
 `
 
+const ConteinerGeral = styled.div`
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: #e6ecde;
+    border-top: 1px solid #000;
+    align-items: center;
+    padding: 10px;
+`
+
 const ItemConteiner = styled.div`
   border-radius: 4px;
   background-color: #e6ecde;
-  height: 380px;
-  width: 220px;
+  height: 150px;
+  width: 100%;
   color: #29303b;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  padding: 10px;
+  /* margin-bottom: 10px;
+  margin-right: 10px; */
+  /* padding: 10px; */
   vertical-align: middle;
   display:flex;
-  flex-direction: column;
-  box-shadow: 5px 10px #bebdbd;
+  align-items: center ;
+  gap: 10px;
 `
 const Title = styled.p`
   font-weight: 500;
@@ -63,33 +73,36 @@ const Link = styled.a`
 `
 
 const Conteiner = styled.div`
-    width: 100%;
-    height: 30px;
+    width: 400px;
+    height: 100%;
     background-color:  #e6ecde;
     display: flex;
     flex-direction: column;
+    
 `
 const ConteinerButton = styled.div`
     display: flex;
     flex-direction: column;
 `
 
-export default function ProdutoHome({imagemHome}) {
+export default function ProdutoFinalizar({imagemHome}) {
   return (
     <>   
-      <ItemConteiner>
-        {/* <Link href={imagemHome.url} target='_blank'> */}
-          <CapaProduto src="https://wx.mlcdn.com.br/ponzi/production/portaldalu/90603_01.jpg"/>
-          <Conteiner>
-            <Title>Driver Selenium D220TI 80w Rms 8 Ohms Diafragma Titânio</Title>
-            <Price>R$50,00</Price>
-            <Title>a vísta</Title>
-            <ConteinerButton>
-              <Button onClick={''}>Comprar</Button>
-            </ConteinerButton>
-          </Conteiner>
-        {/* </Link> */}
-      </ItemConteiner>
+        <ConteinerGeral>
+            <ItemConteiner>
+                {/* <Link href={imagemHome.url} target='_blank'> */}
+                <CapaProduto src="https://wx.mlcdn.com.br/ponzi/production/portaldalu/90603_01.jpg"/>
+                <Conteiner>
+                    <Title>Driver Selenium D220TI 80w Rms 8 Ohms Diafragma Titânio</Title>
+                    <Price>R$50,00</Price>
+                    <Title>a vísta</Title>
+                    <ConteinerButton>
+                    <Button onClick={''}>Excluir</Button>
+                    </ConteinerButton>
+                </Conteiner>
+                {/* </Link> */}
+            </ItemConteiner>
+        </ConteinerGeral>
     </>
   )
 }
