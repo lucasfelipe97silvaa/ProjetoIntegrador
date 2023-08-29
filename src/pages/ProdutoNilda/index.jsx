@@ -3,6 +3,8 @@ import FourDesigner from '../../Components/itemProdutos/index';
 import styled from 'styled-components';
 import api from '../../Server/api';
 import styles from './styles.module.css';
+import Header from '../../Components/Header/index'
+
 
 const Container = styled.div`
   max-width: 960px;

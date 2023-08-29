@@ -4,7 +4,7 @@ import ProdutoFinalizar from '../../Components/ProdutoFinalar';
 
 const ConteinerExterno = styled.div`
     width: 100%;
-    height:60px auto;
+    height:100%;
     background: grey;
     display: flex;
     flex-direction: row;
@@ -24,15 +24,27 @@ const ConteinerFinalizar = styled.div`
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 500px;
-    background-color: grey;
+    height: 600px;
+    background-color: #d33232;
     border-left: 1px solid #000;
     padding: 10px;
+    align-items: center;    
+    justify-content: space-around;
+`
+const DivFinalizar = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    background-color: #7a7171;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    align-items: center;
 `
 
 const FormFinalizar = styled.form`
     display: flex;
-    flex-direction: column;
 `
 
 
@@ -40,19 +52,26 @@ const FormFinalizar = styled.form`
 
 function Finalizacao(){
     return(
+        <>
        <ConteinerExterno>
             <ConteinerProduto>
                 <h1>Minha Cesta</h1>
                 <ProdutoFinalizar/>
-                <ProdutoFinalizar/>
             </ConteinerProduto>
             <ConteinerFinalizar>
-                <FormFinalizar>
-                    <input type="text"></input>
-                    <input/>
-                </FormFinalizar>
+                <DivFinalizar>
+                    <FormFinalizar>
+                        <input type="text"></input>
+                        <button>Cep</button>
+                    </FormFinalizar>
+                </DivFinalizar>
+                <DivFinalizar>
+                    <h1>asdas</h1>
+                    <h2>ajsdjI</h2>
+                </DivFinalizar>
             </ConteinerFinalizar>
        </ConteinerExterno>
+       </>
     )
 }
 

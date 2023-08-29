@@ -99,18 +99,23 @@ export default function Home() {
         </ContainerMenu>
         <ContainerMenu>
           <ImagemContainer src={Imagem}/>
+          <TitleMenu>Pneus</TitleMenu>
         </ContainerMenu>
         <ContainerMenu>
           <ImagemContainer src={Imagem}/>
+          <TitleMenu>Pneus</TitleMenu>
         </ContainerMenu>
         <ContainerMenu>
           <ImagemContainer src={Imagem}/>
+          <TitleMenu>Pneus</TitleMenu>
         </ContainerMenu>
         <ContainerMenu>
           <ImagemContainer src={Imagem}/>
+          <TitleMenu>Pneus</TitleMenu>
         </ContainerMenu>
         <ContainerMenu>
           <ImagemContainer src={Imagem}/>
+          <TitleMenu>Pneus</TitleMenu>
         </ContainerMenu>
     </Container>
     <ConteinerFotos>

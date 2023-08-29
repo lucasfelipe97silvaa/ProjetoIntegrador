@@ -93,6 +93,7 @@ const Quantidade = styled.div`
   border-radius: 100%;
 `
 
+
 export default function Header() {
   return (
     <ConteinerGeral>
@@ -110,7 +111,9 @@ export default function Header() {
                   <FaUser style={{ fontSize: '20px'}}/>
                 </IconLog>
              </IconUser>
+             <Link to={'/produto/finalizar'}>
              <FaCartPlus style={{ fontSize: '20px'}}/>
+             </Link>
           </Login>
         </Conteiner>    
         <Menu>

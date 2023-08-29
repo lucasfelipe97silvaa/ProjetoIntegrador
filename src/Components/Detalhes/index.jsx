@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 const ConteinerExterno = styled.div`
 width: 100%;
 height: 400px;
 background-color: #bbbbbb;
 display: flex;
+border-top: 1px solid #000;
 `
 const ConteinerGlobal = styled.div`
 width: 100%;
@@ -49,30 +51,57 @@ const ConteinerCompra = styled.div`
 const CompraInConteiner = styled.div`
     width: 100%;
     height: 80%;
-    background-color: red;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; 
 `
 
 const ConteinerButton = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    height: 30%;
+    height: 50%;
     align-items: center;
-    background-color: blue;
+    background-color: #fff;
     justify-content: space-around;
 `
-const Button = styled.button`
-    width:100px;
+const Button = styled.span`
+    width:300px;
+    cursor: pointer;
     height: 40px;
+    background-color: #347919;
     margin-top: 20px;
     /* margin: 10px ; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      background-color: #1f5c07  ;
+    }
+    color: #fff;
+    font-weight: 600;
+    border: #000;
+    margin-bottom: 30px;
 `
 const ButtonCarrinho = styled.div`
-    width:50px;
+    width:300px;
+    cursor: pointer;
     height: 40px;
+    background-color: #59c72e;
     margin-top: 20px;
-    background-color: cadetblue;
     /* margin: 10px ; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+      background-color: #2d7510  ;
+    }
+    color: #fff;
+    font-weight: 600;
+    border: #000;
+    margin-bottom: 30px;
 `
 
 const ConteinerDescricao = styled.div`
@@ -108,7 +137,14 @@ const Title = styled.p`
     margin: 20px;
 `
 
-export default function ListDetalhes() {
+const Price = styled.p`
+    color: #FFC004;
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 15px;
+`
+
+export default function ListDetalhes({pecas}) {
   return (
     <>
 <ConteinerGlobal>
@@ -119,12 +155,17 @@ export default function ListDetalhes() {
             <ImagemVertical src ={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/>
         </ConteinerVertical>
         <ConteudoImagem src={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/>
+        {/* <ConteudoImagem src={pecas.imagem}/> */}
         <ConteinerCompra>
-            <CompraInConteiner></CompraInConteiner>
-            <ConteinerButton>
-                <ButtonCarrinho/>
-                <Button/>
-                <ButtonCarrinho/>
+            <CompraInConteiner>
+                <Title > adjfdjfkjds</Title>
+                <Price> $102,00</Price>
+            </CompraInConteiner>
+            <ConteinerButton>   
+            <Link to={'/produto/finalizar'}>
+            <Button>Comprar agora</Button>
+            </Link>
+            <ButtonCarrinho>Adicionar ao carinho</ButtonCarrinho>   
             </ConteinerButton>
         </ConteinerCompra>
     </ConteinerExterno>
