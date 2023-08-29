@@ -85,7 +85,7 @@ export default function ProdutoHome({imagemHome}) {
             <Price>R$50,00</Price>
             <Title>a vísta</Title>
             <ConteinerButton>
-              <Button onClick={''}>Comprar</Button>
+              <Button>Comprar</Button>
             </ConteinerButton>
           </Conteiner>
         {/* </Link> */}

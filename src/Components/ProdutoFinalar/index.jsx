@@ -97,7 +97,7 @@ export default function ProdutoFinalizar({imagemHome}) {
                     <Price>R$50,00</Price>
                     <Title>a vísta</Title>
                     <ConteinerButton>
-                    <Button onClick={''}>Excluir</Button>
+                    <Button>Excluir</Button>
                     </ConteinerButton>
                 </Conteiner>
                 {/* </Link> */}

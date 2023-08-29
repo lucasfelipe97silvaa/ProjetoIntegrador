@@ -87,6 +87,8 @@ const ConteinerFotosMenores = styled.div` // div que está dentro de ConteinerFo
 
 export default function Home() {
 
+  
+
   return (
     <>
     <Thubnail src={Banner}/>
