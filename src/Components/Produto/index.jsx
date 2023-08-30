@@ -74,7 +74,7 @@ const ConteinerButton = styled.div`
     flex-direction: column;
 `
 
-export default function ProdutoHome({imagemHome}) {
+export default function ProdutoHome() {
   return (
     <>   
       <ItemConteiner>

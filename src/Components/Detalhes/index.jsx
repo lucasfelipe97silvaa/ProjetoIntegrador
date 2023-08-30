@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect}from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
@@ -143,8 +143,29 @@ const Price = styled.p`
     font-weight: 500;
     margin-left: 15px;
 `
+const infiniteValue = {
+    title:'',
+    image: '',
+    price:0 ,
+    url:'' 
+};
 
 export default function ListDetalhes({pecas}) {
+    const [values, setValues] = useState(infiniteValue);
+    const {id} = useParams();
+
+    const url = `/peca/${id}`;
+
+    useEffect(() => {
+        if(id){
+            api.get(url)
+                .then((response) =>  {
+                    setValues(response.data);
+                })
+        }
+    },[])
+
+
   return (
     <>
 <ConteinerGlobal>
@@ -154,15 +175,17 @@ export default function ListDetalhes({pecas}) {
             <ImagemVertical src ={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/>
             <ImagemVertical src ={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/>
         </ConteinerVertical>
-        <ConteudoImagem src={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/>
-        {/* <ConteudoImagem src={pecas.imagem}/> */}
+        {/* <ConteudoImagem src={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/> */}
+        <ConteudoImagem src={values.image}/>
         <ConteinerCompra>
             <CompraInConteiner>
                 <Title > adjfdjfkjds</Title>
+                {/* <Title>{peca.title}</Title> */}
                 <Price> $102,00</Price>
+                {/* <Price>{peca.price}</Price> */}
             </CompraInConteiner>
             <ConteinerButton>   
-            <Link to={'/produto/finalizar'}>
+            <Link to={'/produto/finalizar'}>    
             <Button>Comprar agora</Button>
             </Link>
             <ButtonCarrinho>Adicionar ao carinho</ButtonCarrinho>   

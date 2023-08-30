@@ -130,7 +130,9 @@ export default function Home() {
     </ConteinerFotos>
     <Container>
       <Link to={'/produto/detalhes_produtos'}>
-      <ProdutoHome></ProdutoHome>
+      <ProdutoHome>
+        
+      </ProdutoHome>
       </Link>
       <ProdutoHome></ProdutoHome>
       <ProdutoHome></ProdutoHome>

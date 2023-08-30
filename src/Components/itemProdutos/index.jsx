@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
 const ItemContainer = styled.div`
   border-radius: 4px;
@@ -73,6 +74,7 @@ const ConteinerButton = styled.div`
 `
 
 export default function FourDesigner({pecas}) {
+  
   return (
     <>
         <ItemContainer>
@@ -81,7 +83,9 @@ export default function FourDesigner({pecas}) {
             <Title>{pecas.title.substring(0,35)}</Title>
             <Price>{pecas.price}</Price>
             <ConteinerButton>
+              <Link to={`/produto/detalhes_produtos/${pecas.id}`}>
             <Button>Comprar</Button>
+              </Link> 
             </ConteinerButton>
           </Conteiner>
         </ItemContainer>

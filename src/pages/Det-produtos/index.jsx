@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState,useEffect,}from 'react'
 import styled from 'styled-components'
 import ListDetalhes from '../../Components/Detalhes'
 import ProdutoHome from '../../Components/Produto'
+import api from '../../Server/api'
+import { useParams } from 'react-router-dom'
 
 const ConteinerGlobal = styled.div`
     width: 100%;
@@ -29,9 +31,34 @@ const Title = styled.p`
 `
 
 export default function Detalhes() {
+  const [pecas, setPecas] = useState([]);
+
+const {id} = useParams()
+
+  useEffect(() => {
+    const url = '/pecas'
+      if(id){
+        api.get(url)
+          .then((response) => {
+              setPecas(response.date)
+          })
+    }
+  },[])
+
   return (
     <>
-        <ListDetalhes></ListDetalhes>
+      
+        
+        {
+          pecas.map(peca =>{
+            return (
+              <ListDetalhes
+              key={peca.url}
+              pecas={peca}/>
+            )
+          })
+        }
+       
         <Title>Sugestões de produção:</Title>
         <ConteinerSugestao>
           <ProdutoHome/>
