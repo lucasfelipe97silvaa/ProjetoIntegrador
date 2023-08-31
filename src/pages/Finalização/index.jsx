@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState,useEffect,}from 'react'
 import styled from 'styled-components'
 import ProdutoFinalizar from '../../Components/ProdutoFinalar';
+import api from '../../Server/api'
+import { useParams } from 'react-router-dom'
 
 const ConteinerExterno = styled.div`
     width: 100%;
@@ -51,12 +53,29 @@ const FormFinalizar = styled.form`
 
 
 function Finalizacao(){
+    const [pecas, setPecas] = useState({});
+
+    const {id} = useParams()
+    
+      useEffect(() => {
+        const url = `/peca/${id}`
+          if(id){
+            api.get(url)
+              .then((response) => {
+                console.log(response.data)
+                  setPecas(response.data)
+                  console.log(pecas)
+              })
+        }
+      },[])
+
     return(
         <>
        <ConteinerExterno>
             <ConteinerProduto>
                 <h1>Minha Cesta</h1>
-                <ProdutoFinalizar/>
+                <ProdutoFinalizar key={pecas.url}
+              pecas={pecas}/>
             </ConteinerProduto>
             <ConteinerFinalizar>
                 <DivFinalizar>

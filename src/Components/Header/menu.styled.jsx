@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 
 const Conteiner = styled.nav`
@@ -45,16 +46,16 @@ const Bateria = styled.li`
 
 `
 
-const Link = styled.a`
-    text-decoration: dashed;
-    color: black;
-`
+// const Link = styled.a`
+//     text-decoration: dashed;
+//     color: black;
+// `
 
 export function Menustyled() {
   return (
     <Conteiner>
             <ItemMenu>          
-            <PropsLi><Link>Painel</Link></PropsLi>
+            <PropsLi><Link to={'/produtos'}>Produtos</Link></PropsLi>
             <PropsLi><Link>Pneus</Link></PropsLi>
             <PropsLi><Link>Frios</Link></PropsLi>
             <PropsLi><Link> Óleo</Link></PropsLi>

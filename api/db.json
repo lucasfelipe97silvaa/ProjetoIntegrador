@@ -177,6 +177,13 @@
     {
       "image" : "",
       "id": 2      
-    }
+    },
+      {
+        "id": 10,
+        "title": "Bateria Moura 60A M60Gd Direito",
+        "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/226508-800-800/Bateria-Moura-60A-M60Gd-Direitohires-6128971.jpg?v=637534822613100000",
+        "price": 417.9,
+        "url": "https://www.dpaschoal.com.br/bateria-moura-60a-m60gd-direito/p"
+      }
   ]
 }

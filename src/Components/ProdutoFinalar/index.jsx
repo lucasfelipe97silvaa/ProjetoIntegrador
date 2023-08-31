@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import styled from 'styled-components'
 
 const CapaProduto = styled.img`
@@ -85,24 +85,45 @@ const ConteinerButton = styled.div`
     flex-direction: column;
 `
 
-export default function ProdutoFinalizar({imagemHome}) {
+export default function ProdutoFinalizar({pecas}) {
+  const [loading, setLoading] = useState(true);
+
+  function onDelete(id){
+    setLoading(false);
+
+    const url = `/tenis/${id}`;
+
+    api.delete(url)
+    .then((response) => {});
+
+  }
   return (
     <>   
+      {!loading
+      ?
+      (
+        <div>deletando..</div>
+      )
+      :
+      (
         <ConteinerGeral>
             <ItemConteiner>
                 {/* <Link href={imagemHome.url} target='_blank'> */}
-                <CapaProduto src="https://wx.mlcdn.com.br/ponzi/production/portaldalu/90603_01.jpg"/>
+                {/* <CapaProduto src="https://wx.mlcdn.com.br/ponzi/production/portaldalu/90603_01.jpg"/> */}
+                <CapaProduto src={pecas.image}/>
                 <Conteiner>
                     <Title>Driver Selenium D220TI 80w Rms 8 Ohms Diafragma Titânio</Title>
                     <Price>R$50,00</Price>
                     <Title>a vísta</Title>
                     <ConteinerButton>
-                    <Button>Excluir</Button>
+                    <Button onClick={() => onDelete(pecas.id)}>Excluir</Button>
                     </ConteinerButton>
                 </Conteiner>
                 {/* </Link> */}
             </ItemConteiner>
         </ConteinerGeral>
+        )
+      }
     </>
   )
 }

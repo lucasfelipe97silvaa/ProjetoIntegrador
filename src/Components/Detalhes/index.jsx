@@ -181,13 +181,13 @@ export default function ListDetalhes({pecas}) {
         <ConteudoImagem src={pecas.image}/>
         <ConteinerCompra>
             <CompraInConteiner>
-                <Title > adjfdjfkjds</Title>
+                <Title >{pecas.title}</Title>
                 {/* <Title>{peca.title}</Title> */}
-                <Price> $102,00</Price>
+                <Price> {pecas.price}</Price>
                 {/* <Price>{peca.price}</Price> */}
             </CompraInConteiner>
             <ConteinerButton>   
-            <Link to={'/produto/finalizar'}>    
+            <Link to={`/produto/finalizar/${pecas.id}`}>    
             <Button>Comprar agora</Button>
             </Link>
             <ButtonCarrinho>Adicionar ao carinho</ButtonCarrinho>   
