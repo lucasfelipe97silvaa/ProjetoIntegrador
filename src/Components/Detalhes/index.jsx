@@ -152,18 +152,20 @@ const infiniteValue = {
 
 export default function ListDetalhes({pecas}) {
     const [values, setValues] = useState(infiniteValue);
-    const {id} = useParams();
+    // const {id} = useParams();
 
-    const url = `/peca/${id}`;
+    // const url = `/peca/${id}`;
 
-    useEffect(() => {
-        if(id){
-            api.get(url)
-                .then((response) =>  {
-                    setValues(response.data);
-                })
-        }
-    },[])
+    // useEffect(() => {
+    //     if(id){
+    //         api.get(url)
+    //             .then((response) =>  {
+    //                 console.log(response.data);
+    //                 setValues(response.data);
+    //                 console.log(values)
+    //             })
+    //     }
+    // },[])
 
 
   return (
@@ -176,7 +178,7 @@ export default function ListDetalhes({pecas}) {
             <ImagemVertical src ={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/>
         </ConteinerVertical>
         {/* <ConteudoImagem src={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/> */}
-        <ConteudoImagem src={values.image}/>
+        <ConteudoImagem src={pecas.image}/>
         <ConteinerCompra>
             <CompraInConteiner>
                 <Title > adjfdjfkjds</Title>

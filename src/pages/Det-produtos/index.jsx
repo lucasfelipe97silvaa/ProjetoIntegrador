@@ -31,25 +31,29 @@ const Title = styled.p`
 `
 
 export default function Detalhes() {
-  const [pecas, setPecas] = useState([]);
+  const [pecas, setPecas] = useState({});
 
 const {id} = useParams()
 
   useEffect(() => {
-    const url = '/pecas'
+    const url = `/peca/${id}`
       if(id){
         api.get(url)
           .then((response) => {
-              setPecas(response.date)
+            console.log(response.data)
+              setPecas(response.data)
+              console.log(pecas)
           })
     }
   },[])
 
   return (
     <>
-      
+       <ListDetalhes
+              key={pecas.url}
+              pecas={pecas}/>
         
-        {
+        {/* {
           pecas.map(peca =>{
             return (
               <ListDetalhes
@@ -58,7 +62,7 @@ const {id} = useParams()
             )
           })
         }
-       
+        */}
         <Title>Sugestões de produção:</Title>
         <ConteinerSugestao>
           <ProdutoHome/>
