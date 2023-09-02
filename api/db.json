@@ -169,21 +169,114 @@
       "id": 51
     }
   ],
-  "imagemHome": [
+
+"imagemHome": [
+
+  {
+
+    "image" : "https://blog.hipervarejo.com.br/wp-content/uploads/2021/01/Amortecedor-de-autom%C3%B3vel.jpg ",
+
+    "title":"Amortecedores",
+
+    "id": 1
+
+  },
+
+  {
+
+    "image" : "https://img.etimg.com/thumb/msid-75620344,width-300,height-225,imgsize-130559,,resizemode-75/untitled-6.jpg",
+
+    "title": "Pneus",
+
+    "id": 2      
+
+  },
+
+  {
+
+    "image" : "http://blog.autoshoplinhaverde.com.br/wp-content/uploads/4/2021/04/Autoshop-Linha-Verde-Sistema-de-freios.png",
+
+    "title": "Freios",
+
+    "id": 3      
+
+  },
+
+  {
+
+    "image" : "https://www.eaton.com/content/dam/eaton/markets/vehicles/mais-eaton/iStock-1325588832.jpg.transform/default-desktop/image.jpg",
+
+    "title": "Oleo",
+
+    "id": 4      
+
+  },
+
+  {
+
+    "image" : "https://sooleo.com.br/wp-content/uploads/2020/05/bateria.png",
+
+    "title": "Bateria",
+
+    "id": 5      
+
+  },
+
+  {
+
+    "image" : "https://site.zuldigital.com.br/blog/wp-content/uploads/2020/11/shutterstock_1747514588_Easy-Resize.com_.jpg",
+
+    "title": "Embreagem",
+
+    "id": 6    
+
+  }
+  ],
+  "imgbighome":[
+ 
     {
-      "image" : " https://blog.hipervarejo.com.br/wp-content/uploads/2021/01/Amortecedor-de-autom%C3%B3vel.jpg",
-      "id": 1 
+
+      "image" : "https://lh3.googleusercontent.com/iQk3NTKk6SvmiitwLM7dkWwZr99TCAa3rNh3HBqvqIbaXILOVnLMNwCT7REnrdeA-Qe3StSlg12W1gxkmBjO0tGrv8LpYk08OOnY-lThqw",
+      
+      "id": 7    
+
     },
+
     {
-      "image" : "",
-      "id": 2      
+
+      "image" : "https://lh3.googleusercontent.com/pFUnw-MBZIm0MjU5OMzPiqpxP_wuk73-7bIjtwaHYILYekmIWdFzQ_aiOM9wt17aDESzGfELYY7zAJoSKVmb3nAmY6yBWvSPsHHNUMne",
+
+      "id": 8    
+
+    },  
+
+    {
+
+      "image" : "https://lh3.googleusercontent.com/E81zMgKYlExKhzd77mhwOPoM9X5b2mRSwZIfuoRU60K5ticYsLQ3hDHskr8GjD7XphgvYS98zjB1RKnzwtJmgoSgVxKnR9U9mDIbnVjy",
+
+      "id": 9    
+
+    },  
+
+   
+
+    {
+
+      "image" : "https://lh3.googleusercontent.com/sbimTkskcDpcnEKdXDCYY1WIj_NN1kC9r6L3wXnUDzOdAnTcfazx8tB0kXzCIwducYAtUZZDbQ0UXrEUHTTZP27k9Qie08-uJvqeyNqb",
+
+      "id": 10    
+
     },
-      {
-        "id": 10,
-        "title": "Bateria Moura 60A M60Gd Direito",
-        "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/226508-800-800/Bateria-Moura-60A-M60Gd-Direitohires-6128971.jpg?v=637534822613100000",
-        "price": 417.9,
-        "url": "https://www.dpaschoal.com.br/bateria-moura-60a-m60gd-direito/p"
-      }
+
+   
+
+    {
+
+      "image" : "https://lh3.googleusercontent.com/iQk3NTKk6SvmiitwLM7dkWwZr99TCAa3rNh3HBqvqIbaXILOVnLMNwCT7REnrdeA-Qe3StSlg12W1gxkmBjO0tGrv8LpYk08OOnY-lThqw",
+
+      "id": 11    
+
+    }
+
   ]
 }

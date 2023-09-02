@@ -1,11 +1,10 @@
 import React, { useState,useEffect,} from 'react'
 import Banner from '../../../public/image/Frame 1.svg'
 import styled from 'styled-components'
-import Imagem from '../../../public/image/Rectangle 161pneu.svg'
 import api from '../../Server/api'
 import ProdutoHome from '../../Components/Produto'
-import Imagemhome1 from '../../../public/ImagemHome/Rectangle 10.svg'
 import { Link } from 'react-router-dom'
+import ComponentsHome from '../../Components/ComponentHome'
 
 const Thubnail = styled.img`
   width: 80vw;
@@ -86,38 +85,31 @@ const ConteinerFotosMenores = styled.div` // div que está dentro de ConteinerFo
 
 
 export default function Home() {
+  const [imghome, setImghome] = useState([]);
 
-  
+  useEffect(() => {
+    const url = '/imagemHome';
 
+    api.get(url)
+    .then((response) => {
+      console.log(response)
+     setImghome(response.data)
+    })
+  }, [])
   return (
     <>
     <Thubnail src={Banner}/>
     <Container>
-        <ContainerMenu>
-          <ImagemContainer src={Imagem}/>
-          <TitleMenu>Pneus</TitleMenu>
-        </ContainerMenu>
-        <ContainerMenu>
-          <ImagemContainer src={Imagem}/>
-          <TitleMenu>Pneus</TitleMenu>
-        </ContainerMenu>
-        <ContainerMenu>
-          <ImagemContainer src={Imagem}/>
-          <TitleMenu>Pneus</TitleMenu>
-        </ContainerMenu>
-        <ContainerMenu>
-          <ImagemContainer src={Imagem}/>
-          <TitleMenu>Pneus</TitleMenu>
-        </ContainerMenu>
-        <ContainerMenu>
-          <ImagemContainer src={Imagem}/>
-          <TitleMenu>Pneus</TitleMenu>
-        </ContainerMenu>
-        <ContainerMenu>
-          <ImagemContainer src={Imagem}/>
-          <TitleMenu>Pneus</TitleMenu>
-        </ContainerMenu>
-    </Container>
+    {
+          imghome.map(imagemHome => {
+            return (<ComponentsHome
+              key={imagemHome.id}
+              imghome={imagemHome}
+
+            />)
+          })
+        }
+      </Container>
     <ConteinerFotos>
         <ConteinerFotosMenores>
           <Div>

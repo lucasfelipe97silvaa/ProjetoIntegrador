@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom'
 const ConteinerExterno = styled.div`
     width: 100%;
     height:100%;
-    background: grey;
+    background: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -86,7 +86,7 @@ function Finalizacao(){
                 </DivFinalizar>
                 <DivFinalizar>
                     <h1>asdas</h1>
-                    <h2>ajsdjI</h2>
+                    
                 </DivFinalizar>
             </ConteinerFinalizar>
        </ConteinerExterno>

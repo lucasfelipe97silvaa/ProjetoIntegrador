@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import imagem from '../../../public/image/logo.svg'
 import {Menustyled} from '../../Components/Header/menu.styled'
 import { FaUser, FaCartPlus,FaSistrix} from 'react-icons/fa';
 import { Link } from 'react-router-dom'
@@ -10,7 +11,7 @@ const Conteiner = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #DDDDDD;
+  background-color: #fff;
   
 
 `
@@ -99,7 +100,7 @@ export default function Header() {
     <ConteinerGeral>
         <Conteiner>
           <Link to={"/"}>
-            <Thubnail src="https://logosmarcas.net/wp-content/uploads/2021/06/Bentley-1919-Presente.png"></Thubnail>
+            <Thubnail src={imagem}></Thubnail>
           </Link>
           <Cabecalho>
               <Input type="search" placeholder='Digite o nome do produto que procura...'></Input>

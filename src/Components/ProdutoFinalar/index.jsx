@@ -14,7 +14,6 @@ const ConteinerGeral = styled.div`
     height: 200px;
     display: flex;
     background-color: #e6ecde;
-    border-top: 1px solid #000;
     align-items: center;
     padding: 10px;
 `
@@ -113,7 +112,7 @@ export default function ProdutoFinalizar({pecas}) {
                 <CapaProduto src={pecas.image}/>
                 <Conteiner>
                     <Title>Driver Selenium D220TI 80w Rms 8 Ohms Diafragma Titânio</Title>
-                    <Price>R$50,00</Price>
+                    <Price>R${pecas.price}</Price>
                     <Title>a vísta</Title>
                     <ConteinerButton>
                     <Button onClick={() => onDelete(pecas.id)}>Excluir</Button>
