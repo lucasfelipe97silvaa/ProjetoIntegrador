@@ -1,8 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-
-
 
 const ItemContainer = styled.div`
   border-radius: 4px;
@@ -91,24 +89,22 @@ const Subtitle = styled.h4`
   color: #FFC004;
 `
 
-export default function FourDesigner({pecas}) {
-  
+export default function Compneus({cpneus}) {
   return (
     <>
         <ItemContainer>
-            <Thumbnail src={pecas.image} />
-          <Conteiner>
-            <Title>{pecas.title.substring(0,35)}</Title>
-            <Subtitle>em até 3x</Subtitle>
-            <Price>{pecas.price}</Price>
-              <ConteinerButton>
-                <Link to={`/produto/detalhes_produtos/${pecas.id}`}>
-                  <Button>Comprar</Button>
-                </Link> 
-              </ConteinerButton>
-          </Conteiner>
+            <Conteiner>
+                <Thumbnail src={cpneus.image} />
+                <Title>{cpneus.title.substring(0,35)}</Title>
+                <Subtitle>em até</Subtitle>
+                <Price>{cpneus.price}</Price>
+                    <ConteinerButton>
+                        <Link to={`/produto/detalhes_produtos/${cpneus.id}`}>
+                            <Button>Comprar</Button>
+                        </Link> 
+                    </ConteinerButton>
+            </Conteiner>
         </ItemContainer>
     </>
   )
 }
-

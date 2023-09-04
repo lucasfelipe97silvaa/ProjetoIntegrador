@@ -56,11 +56,11 @@ export function Menustyled() {
     <Conteiner>
             <ItemMenu>          
             <PropsLi><Link to={'/produtos'}>Produtos</Link></PropsLi>
-            <PropsLi><Link>Pneus</Link></PropsLi>
-            <PropsLi><Link>Frios</Link></PropsLi>
-            <PropsLi><Link> Óleo</Link></PropsLi>
-            <Bateria><Link>Baterias</Link></Bateria>    
-            <Oferta><Link>Oferta</Link></Oferta>
+            <PropsLi><Link to={'/pneus'}>Pneus</Link></PropsLi>
+            <PropsLi><Link to={'/freios'}>Frios</Link></PropsLi>
+            <PropsLi><Link to ={'/oleo'}> Óleo</Link></PropsLi>
+            <Bateria><Link to={'/baterias'}>Baterias</Link></Bateria>    
+            <Oferta><Link to={'/ofertas'}>Oferta</Link></Oferta>
         </ItemMenu>
     </Conteiner>
   )

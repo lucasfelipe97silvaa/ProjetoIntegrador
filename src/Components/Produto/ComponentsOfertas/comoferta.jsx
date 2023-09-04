@@ -1,8 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 import {Link} from 'react-router-dom'
-
-
 
 const ItemContainer = styled.div`
   border-radius: 4px;
@@ -57,11 +55,11 @@ const Button = styled.div`
   font-size: 14px;
   padding: 6px;
   color: #fff;
-  background-color: #4EB524;
+  background-color: #b32525;
   border-color: #36831761;
   border-radius: 10px;
   &:hover{
-      background-color: #2d7510  ;
+      background-color: #751010  ;
     }
   transition: border;
   font-family: inherit;
@@ -91,24 +89,22 @@ const Subtitle = styled.h4`
   color: #FFC004;
 `
 
-export default function FourDesigner({pecas}) {
-  
+export default function Comofertas({cofertas}) {
   return (
     <>
         <ItemContainer>
-            <Thumbnail src={pecas.image} />
-          <Conteiner>
-            <Title>{pecas.title.substring(0,35)}</Title>
-            <Subtitle>em até 3x</Subtitle>
-            <Price>{pecas.price}</Price>
-              <ConteinerButton>
-                <Link to={`/produto/detalhes_produtos/${pecas.id}`}>
-                  <Button>Comprar</Button>
-                </Link> 
-              </ConteinerButton>
-          </Conteiner>
+            <Conteiner>
+                <Thumbnail src={cofertas.image} />
+                <Title>{cofertas.title.substring(0,35)}</Title>
+                <Subtitle>em até 3x</Subtitle>
+                <Price>{cofertas.price}</Price>
+                    <ConteinerButton>
+                        <Link to={`/produto/detalhes_produtos/${cofertas.id}`}>
+                            <Button>Comprar</Button>
+                        </Link> 
+                    </ConteinerButton>
+            </Conteiner>
         </ItemContainer>
     </>
   )
 }
-

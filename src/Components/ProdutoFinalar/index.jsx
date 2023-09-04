@@ -84,6 +84,9 @@ const ConteinerButton = styled.div`
     flex-direction: column;
 `
 
+
+
+
 export default function ProdutoFinalizar({pecas}) {
   const [loading, setLoading] = useState(true);
 
@@ -112,7 +115,7 @@ export default function ProdutoFinalizar({pecas}) {
                 <CapaProduto src={pecas.image}/>
                 <Conteiner>
                     <Title>Driver Selenium D220TI 80w Rms 8 Ohms Diafragma Titânio</Title>
-                    <Price>R${pecas.price}</Price>
+                    <Price>{pecas.price}</Price>
                     <Title>a vísta</Title>
                     <ConteinerButton>
                     <Button onClick={() => onDelete(pecas.id)}>Excluir</Button>
@@ -123,6 +126,7 @@ export default function ProdutoFinalizar({pecas}) {
         </ConteinerGeral>
         )
       }
+       
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState,useEffect,}from 'react'
 import styled from 'styled-components'
 import ProdutoFinalizar from '../../Components/ProdutoFinalar';
+import ConteinerPreco from '../../Components/ConteinerFinalizar';
 import api from '../../Server/api'
 import { useParams } from 'react-router-dom'
 
@@ -27,7 +28,7 @@ const ConteinerFinalizar = styled.div`
     flex-direction: column;
     width: 400px;
     height: 600px;
-    background-color: #d33232;
+    background-color: #fff;
     border-left: 1px solid #000;
     padding: 10px;
     align-items: center;    
@@ -64,7 +65,6 @@ function Finalizacao(){
               .then((response) => {
                 console.log(response.data)
                   setPecas(response.data)
-                  console.log(pecas)
               })
         }
       },[])
@@ -77,21 +77,19 @@ function Finalizacao(){
                 <ProdutoFinalizar key={pecas.url}
               pecas={pecas}/>
             </ConteinerProduto>
-            <ConteinerFinalizar>
+             <ConteinerFinalizar>
                 <DivFinalizar>
                     <FormFinalizar>
                         <input type="text"></input>
                         <button>Cep</button>
                     </FormFinalizar>
-                </DivFinalizar>
-                <DivFinalizar>
-                    <h1>asdas</h1>
-                    
-                </DivFinalizar>
-            </ConteinerFinalizar>
+                    </DivFinalizar> 
+               <ConteinerPreco key={pecas.url} pecas={pecas}/>
+            </ConteinerFinalizar> 
        </ConteinerExterno>
        </>
     )
 }
 
 export default Finalizacao;
+

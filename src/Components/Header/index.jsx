@@ -29,7 +29,7 @@ const Cabecalho = styled.div`
 `
 
 
-const Menu = styled.div`
+const Menu = styled.nav`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -37,7 +37,6 @@ const Menu = styled.div`
     width: 100%;
     height: 40px;
     background-color: #FFC004;
-    
 
 `
 

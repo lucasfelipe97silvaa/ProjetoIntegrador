@@ -25,7 +25,7 @@ const FooterMenu = styled.div`
 const FooterConteiner = styled.div`
   width: 100%;
   height: 100px;
-  margin-top: 300px;
+  margin-top: 220px;
   
 
 `

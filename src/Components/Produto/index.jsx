@@ -51,7 +51,7 @@ const Button = styled.div`
   background-color: #4EB524;
   border-color: black;
   border-radius: 4px;
-  transition: border-color ;
+  transition: border;
   font-family: inherit;
   margin-top: 10px;
 `

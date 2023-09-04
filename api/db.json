@@ -4,48 +4,48 @@
       "id": 10,
       "title": "Bateria Moura 60A M60Gd Direito",
       "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/226508-800-800/Bateria-Moura-60A-M60Gd-Direitohires-6128971.jpg?v=637534822613100000",
-      "price": 417.9,
+      "price": "R$ 417.9",
       "url": "https://www.dpaschoal.com.br/bateria-moura-60a-m60gd-direito/p"
     },
     {
       "id": 20,
       "title": "Bateria Zetta Z60D Direito",
       "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/226510-1000-1000/Bateria-Zetta-Z60D-Direitohires-4503198.jpg?v=637534822632000000",
-      "price": 378.96,
+      "price": "R$ 378.96",
       "url": "https://www.dpaschoal.com.br/bateria-zetta-z60d-direito/p"
     },
     {
       "id": 30,
       "title": "Bateria Moura 50A M50Ed Direito",
       "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/226505-1000-1000/Bateria-Moura-50A-M50Ed-Direitohires-6128947.jpg?v=637534822581800000",
-      "price": 417.9,
+      "price": "R$ 417.90",
       "url": "https://www.dpaschoal.com.br/bateria-moura-50a-m50ed-direito/p"
     },
     {
       "title": "Jogo 4 Amortecedor Volksvagem Gol G5 e G6 Turbogás Dianteiro + Traseiro Cofap",
       "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/160163-1000-1000/image-babfa02aa0d94889ac21c775103917dc.jpg?v=637484683307930000",
-      "price": "902,40",
+      "price": "R$ 902.40 ",
       "url": "https://www.dpaschoal.com.br/jogo-4-amortecedor-volksvagem-gol-g5-e-g6-turbogas-dianteiro---traseiro-cofap-9961347/p",
       "id": 31
     },
     {
       "title": "Amortecedor Jac J3 Dianteiro Esquerdo Cofap Gp33209 Turbogás Unitário",
       "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/206370-1000-1000/image-10112a521a4a466688851001df2cc915.jpg?v=637509128930000000",
-      "price": "436,67",
+      "price": "R$ 436.67",
       "url": "https://www.dpaschoal.com.br/amortecedor-jac-j3-dianteiro-esquerdo-cofap-gp33209-turbogas-unitario-9982646/p",
       "id": 32
     },
     {
       "title": "Bucha Amortecedor 4835 Sampel",
       "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/161355-800-800/image-f40ea927d5f5429ba7e5bd662bbb1998.jpg?v=637485577611700000",
-      "price": "R$ 7,24",
+      "price": "R$ 7.24",
       "url": "https://www.dpaschoal.com.br/bucha-amortecedor-4835-sampel-9962003/p",
       "id": 33
     },
     {
       "title": "Kit 4 Pneus Aro 16 Goodyear Assurance 195/60R16 89T",
       "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/269043-800-800/Kit-4-Pneus-Aro-16-Goodyear-Assurance-195-60R16-89T.jpg?v=637782844152100000",
-      "price": "R$ 2.374,62",
+      "price": "R$ 2.374 " ,
       "url": "https://www.dpaschoal.com.br/kit-4-pneus-aro-16-goodyear-assurance-195-60-r16-89t/p",
       "id": 34
     },
@@ -164,9 +164,30 @@
     {
       "title": "Oleo Motor 20W50 Sl Lubrax Essencial 1L 1018304 Petrobras",
       "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/204397-800-800/image-b7a4f8a82a8e4ba7ac99a73f69c11571.jpg?v=637502840153330000",
-      "price": "23,90",
+      "price": "R$ 23,90",
       "url": "https://www.dpaschoal.com.br/oleo-motor-20w50-sl-lubrax-essencial-1l-1018304-petrobras-9982005/p",
       "id": 51
+    },
+    {
+      "title": "Pneu Aro 16 Goodyear Eagle Sport 2 205/55R16 91V",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/272078-1000-1000/Pneu-Aro-16-Goodyear-Eagle-Sport-2-205-55R16-91V-01.jpg?v=638233837344870000",
+      "price": "R$ 441,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 52
+    },
+    {
+      "title": "Bieleta Barra Estabilizadora Dianteira Esquerda Direita Sk3764A Sampel",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/263435-1000-1000/image-7af5a4d412204e4bab08d9ca0852aadb.jpg?v=637535894855930000",
+      "price": "R$ 23,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 53
+    },
+    {
+      "title": "Central Multimídia Pioneer DMH-A248BT 2din Tel a 6.2 Câmera Ré USB Bluetooth",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/269805-1000-1000/image-299b1ced2485418087ae19b9c8aaf33d.jpg?v=637926668068070000",
+      "price": "R$ 41,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 54
     }
   ],
 
@@ -232,7 +253,7 @@
 
   }
   ],
-  "imgbighome":[
+  "imgconteinerhome":[
  
     {
 
@@ -278,5 +299,141 @@
 
     }
 
+  ],
+  "pneus" :[
+    {
+      "title": "Kit 4 Pneus Aro 16 Goodyear Assurance 195/60R16 89T",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/269043-800-800/Kit-4-Pneus-Aro-16-Goodyear-Assurance-195-60R16-89T.jpg?v=637782844152100000",
+      "price": "R$ 2.374,62",
+      "url": "https://www.dpaschoal.com.br/kit-4-pneus-aro-16-goodyear-assurance-195-60-r16-89t/p",
+      "id": 34
+    },
+    {
+      "title": "Kit 4 Pneus Aro 17 Goodyear Efficientgrip 215/50R17 91V",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/268972-800-800/Kit-4-Pneus-Aro-17-Goodyear-Efficientgrip-215-50R17-91V.jpg?v=637782843500330000",
+      "price": "R$ 2.407,60",
+      "url": "https://www.dpaschoal.com.br/kit-4-pneus-aro-17-goodyear-efficientgrip-215-50-r17-91v/p",
+      "id": 35
+    },
+    {
+      "title": "Kit 4 Pneus Aro 15 Goodyear Assurance 175/65R15 84T",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/269037-600-600/Kit-4-Pneus-Aro-15-Goodyear-Assurance-175-65R15-84T.jpg?v=637782844087070000",
+      "price": "R$ 1.675,61",
+      "url": "https://www.dpaschoal.com.br/kit-4-pneus-aro-15-goodyear-assurance-175-65-r15-84t/p",
+      "id": 36
+    }
+  ],
+  "freios" : [
+    {
+      "title": "Par Tambor Freio Traseiro 279,5Mm 5 Furos Sem Cubo Hf114E Hipper Freios",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/218079-600-600/Par-Tambor-Freio-Traseiro-2795Mm-5-Furos-Sem-Cubo-Hf114E-Hipper-Freios-DPS-6390471-01.jpg?v=637531417174630000",
+      "price": "R$ 509,01",
+      "url": "https://www.dpaschoal.com.br/tambor-freio-traseiro-279-5mm-5-furos-sem-cubo-hf114e-hipper-freios/p",
+      "id": 37
+    },
+    {
+      "title": "Par Tambor Freio Traseiro 228,6Mm 5 Furos Sem Cubo Hf203 Hipper Freios",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/187767-800-800/image-519e39c5077e4511b5e326b3e3f7e5f4.jpg?v=637492691688400000",
+      "price": "R$ 442,09",
+      "url": "https://www.dpaschoal.com.br/par-tambor-freio-traseiro-2286mm-5-furos-sem-cubo-hf203-hipper-freios-9975146/p",
+      "id": 38
+    },
+    {
+      "title": "Par Tambor Freio Traseiro 260Mm 6 Furos Sem Cubo Hf350C Hipper Freios",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/188028-800-800/image-27f9d87bd1b94d22a1060632fdece8de.jpg?v=637492692201230000",
+      "price": "R$ 376,92",
+      "url": "Par Tambor Freio Traseiro 260Mm 6 Furos Sem Cubo Hf350C Hipper Freios",
+      "id": 39
+    }
+  ],
+  "oleo" : [
+    {
+      "title": "Oleo Motor 10W30 MX 4T Mobil Super Moto Semissintético",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/270115-800-800/image-c3c86a0b2c3e4a6e8db7582b1820c06e.jpg?v=637982545711630000",
+      "price": "R$ 42,66",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-10w30-mx-4t-mobil-super-moto-semissintetico-1049950829/p",
+      "id": 49
+    },
+    {
+      "title": "Óleo Motor 5w30 Evora Synthetic EVR S2 API 1L",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/271573-800-800/Oleo_Evora_01.jpg?v=638122322524700000",
+      "price": "R$ 41,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 50
+    },
+    {
+      "title": "Oleo Motor 20W50 Sl Lubrax Essencial 1L 1018304 Petrobras",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/204397-800-800/image-b7a4f8a82a8e4ba7ac99a73f69c11571.jpg?v=637502840153330000",
+      "price": "R$ 23,90",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-20w50-sl-lubrax-essencial-1l-1018304-petrobras-9982005/p",
+      "id": 51
+    }
+  ],
+  "baterias" : [
+    {
+      "id": 10,
+      "title": "Bateria Moura 60A M60Gd Direito",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/226508-800-800/Bateria-Moura-60A-M60Gd-Direitohires-6128971.jpg?v=637534822613100000",
+      "price": 417.9,
+      "url": "https://www.dpaschoal.com.br/bateria-moura-60a-m60gd-direito/p"
+    },
+    {
+      "id": 20,
+      "title": "Bateria Zetta Z60D Direito",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/226510-1000-1000/Bateria-Zetta-Z60D-Direitohires-4503198.jpg?v=637534822632000000",
+      "price": "R$ 378.96 ",
+      "url": "https://www.dpaschoal.com.br/bateria-zetta-z60d-direito/p"
+    },
+    {
+      "id": 30,
+      "title": "Bateria Moura 50A M50Ed Direito",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/226505-1000-1000/Bateria-Moura-50A-M50Ed-Direitohires-6128947.jpg?v=637534822581800000",
+      "price": "R$ 417.9",
+      "url": "https://www.dpaschoal.com.br/bateria-moura-50a-m50ed-direito/p"
+    }
+  ], 
+  "ofertas" : [
+    {
+      "id": 20,
+      "title": "Bateria Zetta Z60D Direito",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/226510-1000-1000/Bateria-Zetta-Z60D-Direitohires-4503198.jpg?v=637534822632000000",
+      "price": "R$ 378.96",
+      "url": "https://www.dpaschoal.com.br/bateria-zetta-z60d-direito/p"
+    },
+    {
+      "title": "Kit 4 Pneus Aro 15 Goodyear Assurance 175/65R15 84T",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/269037-600-600/Kit-4-Pneus-Aro-15-Goodyear-Assurance-175-65R15-84T.jpg?v=637782844087070000",
+      "price": "R$ 1.675,61",
+      "url": "https://www.dpaschoal.com.br/kit-4-pneus-aro-15-goodyear-assurance-175-65-r15-84t/p",
+      "id": 36
+    },
+    {
+      "title": "Par Tambor Freio Traseiro 279,5Mm 5 Furos Sem Cubo Hf114E Hipper Freios",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/218079-600-600/Par-Tambor-Freio-Traseiro-2795Mm-5-Furos-Sem-Cubo-Hf114E-Hipper-Freios-DPS-6390471-01.jpg?v=637531417174630000",
+      "price": "R$ 509,01",
+      "url": "https://www.dpaschoal.com.br/tambor-freio-traseiro-279-5mm-5-furos-sem-cubo-hf114e-hipper-freios/p",
+      "id": 37
+    },
+    {
+      "title": "Pneu Aro 16 Goodyear Eagle Sport 2 205/55R16 91V",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/272078-1000-1000/Pneu-Aro-16-Goodyear-Eagle-Sport-2-205-55R16-91V-01.jpg?v=638233837344870000",
+      "price": "R$ 441,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 52
+    },
+    {
+      "title": "Bieleta Barra Estabilizadora Dianteira Esquerda Direita Sk3764A Sampel",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/263435-1000-1000/image-7af5a4d412204e4bab08d9ca0852aadb.jpg?v=637535894855930000",
+      "price": "R$ 23,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 53
+    },
+    {
+      "title": "Central Multimídia Pioneer DMH-A248BT 2din Tel a 6.2 Câmera Ré USB Bluetooth",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/269805-1000-1000/image-299b1ced2485418087ae19b9c8aaf33d.jpg?v=637926668068070000",
+      "price": "R$ 41,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 54
+    }
   ]
 }

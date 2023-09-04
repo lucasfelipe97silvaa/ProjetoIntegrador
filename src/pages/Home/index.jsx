@@ -5,6 +5,7 @@ import api from '../../Server/api'
 import ProdutoHome from '../../Components/Produto'
 import { Link } from 'react-router-dom'
 import ComponentsHome from '../../Components/ComponentHome'
+import ConteinerImgHome from '../../Components/ConteinerImgHome'
 
 const Thubnail = styled.img`
   width: 80vw;
@@ -86,16 +87,27 @@ const ConteinerFotosMenores = styled.div` // div que está dentro de ConteinerFo
 
 export default function Home() {
   const [imghome, setImghome] = useState([]);
+  const [imgconteiner, setImgconteiner] = useState([])
 
   useEffect(() => {
     const url = '/imagemHome';
 
     api.get(url)
     .then((response) => {
-      console.log(response)
      setImghome(response.data)
     })
   }, [])
+
+  useEffect(() => {
+    const url = '/imgconteinerhome';
+
+    api.get(url)
+    .then((response) => {
+      console.log(response)
+     setImgconteiner(response.data)
+    })
+  }, [])
+
   return (
     <>
     <Thubnail src={Banner}/>
@@ -112,11 +124,14 @@ export default function Home() {
       </Container>
     <ConteinerFotos>
         <ConteinerFotosMenores>
-          <Div>
-          </Div>
-          <Div/>
-          <Div/>
-          <Div/>
+        {/* {
+          imgconteiner.map(imgHomeHome => {
+            return (<ConteinerImgHome
+            key={imgHomeHome.id} 
+            imgconteiner={imgHomeHome}
+            />)
+          })
+        } */}
         </ConteinerFotosMenores>
         <Div/>
     </ConteinerFotos>

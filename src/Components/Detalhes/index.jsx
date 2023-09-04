@@ -151,7 +151,6 @@ const infiniteValue = {
 };
 
 export default function ListDetalhes({pecas}) {
-    const [values, setValues] = useState(infiniteValue);
     // const {id} = useParams();
 
     // const url = `/peca/${id}`;
