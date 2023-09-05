@@ -6,6 +6,57 @@ import api from '../../Server/api'
 import cepApi from '../../Server/cepApi'
 import { useParams } from 'react-router-dom'
 
+
+const Input = styled.input`
+  background-color: #e7e5e5c0 ;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  border:1px solid #22212171; 
+`
+const InputNum = styled.input`
+  background-color: #e7e5e5c0 ;
+  border-radius: 2px;
+  display: flex;
+  border: none;
+  border:1px solid #22212171; 
+`
+/* div Form utilizada no Form*/
+const Form = styled.div`
+  display:flex;
+  margin-bottom: 30px;
+`
+const Conteiner = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  `
+  const Label = styled.label`
+  display:flex;
+  flex-direction:column;
+  margin-top: 1px;
+  font-size: 10px;
+  
+  `
+const ContainerForm = styled.div`
+  display: flex;
+`
+const ContainerNum = styled.div`
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  width: 40px;
+  margin-left: 6px;
+`
+
+  const Button = styled.button`
+    padding: 8px;
+    background-color: #0635AD;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  `
 const ContainerGeral = styled.div`
   display: flex;
   flex-direction: column;
@@ -35,6 +86,7 @@ const ConteinerExterno = styled.div`
     flex-direction: row;
     justify-content: space-around;
     `
+
 
 const ConteinerProduto = styled.div`
     width: 50%;
@@ -68,9 +120,10 @@ const DivFinalizar = styled.div`
     flex-direction: column;
     width: 300px;
     height: 200px;
-    background-color: #7a7171;
+    background-color: #F5F5F5;
     padding: 10px;
     align-items: center;
+    border-radius: 10px;
 `
 
 const FormFinalizar = styled.form`
@@ -95,8 +148,9 @@ function Finalizacao(){
               })
         }
       },[])
+     
 
-      const urlcep = `/13084190/json/`;
+      const urlcep = `/13084190/json/`; {/*Pesquisa Cep */} 
 
       useEffect(() => {
         cepApi.get(urlcep)
@@ -104,31 +158,63 @@ function Finalizacao(){
           console.log(response)
           setCep(response.data)
         })
+        
       },[])
       
+      function onSubmit(ev){
+        ev.preventDefault();
+
+    
+      }
+    
+      function onChange(ev){
+        const {name, value} = ev.target
+
+        console.log({name,value})
+
+        setCep({...cep,[name]:value});
+    }
+
+
     return(
         <ContainerGeral>
           <ContainerSub>
             <ConteinerExterno>
                   <ConteinerProduto>
                       <h1>Minha Cesta</h1>
-                      <ProdutoFinalizar key={pecas.url}
-                    pecas={pecas}/>
+                      {/* trazendo as informações do "ID" para finalazção da compra*/}
+                      <ProdutoFinalizar 
+                        key={pecas.url} 
+                        pecas={pecas}/> 
                   </ConteinerProduto>
                   <ConteinerFinalizar>
                   <ContainerDfinalizar>
                       <DivFinalizar>
-                          <FormFinalizar>
-                              <input type="text" ></input>
-                              <button>Cep</button>
-                              <input type='submit'value={cep.logradouro}></input>
-                              <input type='submit'value={cep.bairro}></input>
-                              <input type='submit'value={cep.localidade}></input>
-                              <input type='submit'value={cep.uf}></input>
+                          <FormFinalizar onSubmit={onSubmit}> {/*Formulario pesquisa de cep */}
+                              <Form>
+                                <Input type="text" id="cep" placeholder='Digite seu Cep:' />
+                                <Button >Consultar</Button>
+                              </Form>
+                          <ContainerForm>
+                            <Conteiner>
+                              <Label htmlFor="logradouro">Logradouro</Label>
+                              <Input type="submit" id="logradouro" name="logradouro" value={cep.logradouro} onChange={onChange} />
+                              <Label htmlFor="bairro">Bairro</Label>
+                              <Input type="submit" id="bairro" name="bairro" value={cep.bairro} onChange={onChange}/>
+                              <Label htmlFor="localidade">Localidade</Label>
+                              <Input type="submit" id="localidade" name="localidade" value={cep.localidade} onChange={onChange} />
+                              <Label htmlFor="uf">Uf</Label>
+                              <Input type="submit" id="uf" name="uf" value={cep.uf} onChange={onChange} />
+                            </Conteiner>
+                            <ContainerNum>
+                            <Label type="text">Numero:</Label>
+                            <InputNum type="text" onChange={onChange}></InputNum>
+                            </ContainerNum>
+                              </ContainerForm>
                           </FormFinalizar>
                       </DivFinalizar> 
                   </ContainerDfinalizar>
-                    <ConteinerPreco key={pecas.url} pecas={pecas}/>
+                    <ConteinerPreco key={pecas.url} pecas={pecas}/> {/*Informação do valor "ID" selecionado */}
                   </ConteinerFinalizar> 
             </ConteinerExterno>
           </ContainerSub>

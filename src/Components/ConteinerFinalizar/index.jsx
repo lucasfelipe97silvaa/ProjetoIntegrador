@@ -7,7 +7,7 @@ const DivFinalizar = styled.div`
     flex-direction: column;
     width: 300px;
     height: 200px;
-    background-color: #7a7171;
+    background-color: #F5F5F5;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     padding: 10px;

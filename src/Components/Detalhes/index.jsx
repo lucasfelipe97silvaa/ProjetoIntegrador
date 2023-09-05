@@ -48,15 +48,13 @@ const ConteinerCompra = styled.div`
     flex-direction: column;
     width: 363px;
     height: 100%;
-    background-color: aliceblue;
     margin-left: 148px;
     border: 1px solid #00000076;
     margin-top: 10px;
 
 `
 const CompraInConteiner = styled.div`
-    width: 100%;
-    height: 80%;
+    width: auto;
     background-color: #fff;
     display: flex;
     flex-direction: column; 
@@ -140,7 +138,7 @@ const Descricao = styled.p`
 `
 
 const Title = styled.p`
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     margin: 20px;
 `

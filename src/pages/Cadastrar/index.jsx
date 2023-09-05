@@ -70,7 +70,7 @@ function Cadastrar(){
                 <Input type="text" id="image" name="image" onChange={onChange} />
                 <Label htmlFor="price">Preço</Label>
                 <Input type="text" id="price" name="price" onChange={onChange} />
-                <Button type='submit' onClick={''}>Salvar</Button>
+                <Button type='submit'>Salvar</Button>
             </Conteiner>
 
         </Form>
