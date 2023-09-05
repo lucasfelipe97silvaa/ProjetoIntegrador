@@ -435,5 +435,72 @@
       "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
       "id": 54
     }
+  ],
+  "ofertashome" : [
+    {
+      "title": "Amortecedor Jac J3 Dianteiro Esquerdo Cofap Gp33209 Turbogás Unitário",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/206370-1000-1000/image-10112a521a4a466688851001df2cc915.jpg?v=637509128930000000",
+      "price": "R$ 436.67",
+      "url": "https://www.dpaschoal.com.br/amortecedor-jac-j3-dianteiro-esquerdo-cofap-gp33209-turbogas-unitario-9982646/p",
+      "id": 32
+    },
+    {
+      "title": "Bucha Amortecedor 4835 Sampel",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/161355-800-800/image-f40ea927d5f5429ba7e5bd662bbb1998.jpg?v=637485577611700000",
+      "price": "R$ 7.24",
+      "url": "https://www.dpaschoal.com.br/bucha-amortecedor-4835-sampel-9962003/p",
+      "id": 33
+    },
+    {
+      "title": "Kit 4 Pneus Aro 15 Goodyear Assurance 175/65R15 84T",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/269037-600-600/Kit-4-Pneus-Aro-15-Goodyear-Assurance-175-65R15-84T.jpg?v=637782844087070000",
+      "price": "R$ 1.675,61",
+      "url": "https://www.dpaschoal.com.br/kit-4-pneus-aro-15-goodyear-assurance-175-65-r15-84t/p",
+      "id": 36
+    },
+    {
+      "title": "Par Tambor Freio Traseiro 279,5Mm 5 Furos Sem Cubo Hf114E Hipper Freios",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/218079-600-600/Par-Tambor-Freio-Traseiro-2795Mm-5-Furos-Sem-Cubo-Hf114E-Hipper-Freios-DPS-6390471-01.jpg?v=637531417174630000",
+      "price": "R$ 509,01",
+      "url": "https://www.dpaschoal.com.br/tambor-freio-traseiro-279-5mm-5-furos-sem-cubo-hf114e-hipper-freios/p",
+      "id": 37
+    },
+    {
+      "title": "Pneu Aro 16 Goodyear Eagle Sport 2 205/55R16 91V",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/272078-1000-1000/Pneu-Aro-16-Goodyear-Eagle-Sport-2-205-55R16-91V-01.jpg?v=638233837344870000",
+      "price": "R$ 441,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 52
+    },
+    {
+      "title": "Central Multimídia Pioneer DMH-A248BT 2din Tel a 6.2 Câmera Ré USB Bluetooth",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/269805-1000-1000/image-299b1ced2485418087ae19b9c8aaf33d.jpg?v=637926668068070000",
+      "price": "R$ 41,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 54
+    }
+  ],
+  "sugestoes": [
+    {
+      "title": "Par Tambor Freio Traseiro 279,5Mm 5 Furos Sem Cubo Hf114E Hipper Freios",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/218079-600-600/Par-Tambor-Freio-Traseiro-2795Mm-5-Furos-Sem-Cubo-Hf114E-Hipper-Freios-DPS-6390471-01.jpg?v=637531417174630000",
+      "price": "R$ 509,01",
+      "url": "https://www.dpaschoal.com.br/tambor-freio-traseiro-279-5mm-5-furos-sem-cubo-hf114e-hipper-freios/p",
+      "id": 37
+    },
+    {
+      "title": "Pneu Aro 16 Goodyear Eagle Sport 2 205/55R16 91V",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/272078-1000-1000/Pneu-Aro-16-Goodyear-Eagle-Sport-2-205-55R16-91V-01.jpg?v=638233837344870000",
+      "price": "R$ 441,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 52
+    },
+    {
+      "title": "Central Multimídia Pioneer DMH-A248BT 2din Tel a 6.2 Câmera Ré USB Bluetooth",
+      "image": "https://dpaschoal.vteximg.com.br/arquivos/ids/269805-1000-1000/image-299b1ced2485418087ae19b9c8aaf33d.jpg?v=637926668068070000",
+      "price": "R$ 41,80",
+      "url": "https://www.dpaschoal.com.br/oleo-motor-5w30-evora-synthetic-evr-s2-api-1l/p",
+      "id": 54
+    }
   ]
 }

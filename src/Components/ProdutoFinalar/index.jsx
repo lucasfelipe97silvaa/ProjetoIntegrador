@@ -16,11 +16,13 @@ const ConteinerGeral = styled.div`
     background-color: #e6ecde;
     align-items: center;
     padding: 10px;
+    border: 1px solid #0a0a0a67;
+    border-radius: 5px;
 `
 
 const ItemConteiner = styled.div`
   border-radius: 4px;
-  background-color: #e6ecde;
+  background-color: #ffffff;
   height: 150px;
   width: 100%;
   color: #29303b;
@@ -60,7 +62,6 @@ const Button = styled.div`
   background-color: #4EB524;
   border-color: black;
   border-radius: 4px;
-  transition: border-color ;
   font-family: inherit;
   margin-top: 10px;
 `
@@ -74,16 +75,16 @@ const Link = styled.a`
 const Conteiner = styled.div`
     width: 400px;
     height: 100%;
-    background-color:  #e6ecde;
+    /* background-color:  #e6ecde; */
     display: flex;
     flex-direction: column;
-    
+    /* border-left:1px solid #0a0a0a67; */
+    padding-left: 5px ;
 `
 const ConteinerButton = styled.div`
     display: flex;
     flex-direction: column;
 `
-
 
 
 

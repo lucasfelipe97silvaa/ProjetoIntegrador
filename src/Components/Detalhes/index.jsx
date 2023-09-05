@@ -5,16 +5,20 @@ import {Link} from 'react-router-dom'
 const ConteinerExterno = styled.div`
 width: 100%;
 height: 400px;
-background-color: #bbbbbb;
+background-color: #fff;
 display: flex;
-border-top: 1px solid #000;
+justify-content: center;
+/* border-top: 1px solid #000; */
+
 `
 const ConteinerGlobal = styled.div`
 width: 100%;
 height: 100%;
-background-color: #bbbbbb;
+background-color: #fff;
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
 `
 const ImagemVertical = styled.img`
     width:100%;
@@ -25,7 +29,7 @@ const ConteinerVertical = styled.div`
     width: 100px;
     height: 100%;
     /* background-color: blue; */
-    margin-left: 242px;
+    /* margin-left: 242px; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -34,8 +38,9 @@ const ConteudoImagem = styled.img`
     width: 413px;
     height: 100%;  
     background-color: aliceblue;
-    margin-left: 30px;
-    border-bottom: 1px solid  #000;
+    /* margin-left: 30px; */
+    margin: 10px;
+    /* border-bottom: 1px solid  #000; */
 `
 
 const ConteinerCompra = styled.div`
@@ -44,8 +49,9 @@ const ConteinerCompra = styled.div`
     width: 363px;
     height: 100%;
     background-color: aliceblue;
-    border-bottom: 1px solid  #5f6100;
     margin-left: 148px;
+    border: 1px solid #00000076;
+    margin-top: 10px;
 
 `
 const CompraInConteiner = styled.div`
@@ -109,20 +115,22 @@ const ConteinerDescricao = styled.div`
     height:200px;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    justify-content: center;
     background-color: #fff;
-    margin-left: 200px;
+    /* margin-left: 200px; */
 `
 const ConteinerGeralDescri = styled.div`
     display: flex;
     width: 98.7%;
     height:200px;
-    background-color: #fff;
+    /* background-color: #861d1d; */
     padding: 10px ;
     margin-top:20px ; 
     margin-bottom: 100px;
-    border-top:1px solid #000 ;
-    border-bottom:1px solid #000;
+    border-top:1px solid #00000076;
     padding-bottom: 20px;
+    justify-content: start;
 `
 
 const Descricao = styled.p`
@@ -172,9 +180,9 @@ export default function ListDetalhes({pecas}) {
 <ConteinerGlobal>
     <ConteinerExterno>
         <ConteinerVertical>
-            <ImagemVertical src ={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/>
-            <ImagemVertical src ={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/>
-            <ImagemVertical src ={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/>
+            <ImagemVertical src ={pecas.image}/>
+            <ImagemVertical src ={pecas.image}/>
+            <ImagemVertical src ={pecas.image}/>
         </ConteinerVertical>
         {/* <ConteudoImagem src={'https://down-br.img.susercontent.com/file/6aaeb0f80f4f454af16c148aaefd7238'}/> */}
         <ConteudoImagem src={pecas.image}/>
@@ -196,11 +204,7 @@ export default function ListDetalhes({pecas}) {
     <ConteinerGeralDescri>     
         <ConteinerDescricao>
             <Title>Descrição: </Title>
-            <Descricao>VOLANTE NOVO VOLKSWAGEN MODELO FUSCA CÁLICE COR MARFIM*
-                    <br/> - RÉPLICA 100% FIEL AO MODELO ORIGINAL CLÁSSICO VOLKSWAGEN
-                        <br/> - PRODUTO NOVO E DE ALTA QUALIDADE
-                        VALORIZE O INTERIOR DO SEU VEÍCULO! 
-                        <br/> ADQUIRA UM PRODUTO NOVO E DE EXCELENTÍSSIMA QUALIDADE!
+            <Descricao>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas et voluptate impedit! Libero modi, quaerat, suscipit architecto sapiente quas officiis consectetur qui dolorum dolor necessitatibus at excepturi veniam incidunt cum.       
             </Descricao>
         </ConteinerDescricao>
     </ConteinerGeralDescri>

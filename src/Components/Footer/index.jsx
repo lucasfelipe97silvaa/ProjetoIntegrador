@@ -6,7 +6,7 @@ const FooterColor = styled.div`
   justify-content: space-between;
   width: 100%;
   height: 100px;
-  background-color: #DDDDDD;
+  background-color: #fff;
   justify-content: center;
 
 `
@@ -25,7 +25,7 @@ const FooterMenu = styled.div`
 const FooterConteiner = styled.div`
   width: 100%;
   height: 100px;
-  margin-top: 220px;
+  margin-top: auto;
   
 
 `

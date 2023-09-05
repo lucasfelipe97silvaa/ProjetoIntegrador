@@ -88,17 +88,18 @@ const Subtitle = styled.h4`
   font-weight: 200;
   color: #FFC004;
 `
-export default function Comoleo({coleo}) {
+
+export default function Comsugestao({sugest}) {
   return (
     <>
         <ItemContainer>
             <Conteiner>
-                <Thumbnail src={coleo.image} />
-                <Title>{coleo.title.substring(0,35)}</Title>
+                <Thumbnail src={sugest.image} />
+                <Title>{sugest.title.substring(0,35)}</Title>
                 <Subtitle>em até 3x</Subtitle>
-                <Price>{coleo.price}</Price>
+                <Price>{sugest.price}</Price>
                     <ConteinerButton>
-                        <Link to={`/produto/detalhes_produtos/${coleo.id}`}>
+                        <Link to={`/produto/detalhes_produtos/${sugest.id}`}>
                             <Button>Comprar</Button>
                         </Link> 
                     </ConteinerButton>

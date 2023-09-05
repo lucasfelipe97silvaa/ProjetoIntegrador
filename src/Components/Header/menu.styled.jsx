@@ -54,7 +54,7 @@ const Bateria = styled.li`
 export function Menustyled() {
   return (
     <Conteiner>
-            <ItemMenu>          
+        <ItemMenu>          
             <PropsLi><Link to={'/produtos'}>Produtos</Link></PropsLi>
             <PropsLi><Link to={'/pneus'}>Pneus</Link></PropsLi>
             <PropsLi><Link to={'/freios'}>Frios</Link></PropsLi>

@@ -2,19 +2,45 @@ import React, { useState,useEffect,} from 'react'
 import Banner from '../../../public/image/Frame 1.svg'
 import styled from 'styled-components'
 import api from '../../Server/api'
-import ProdutoHome from '../../Components/Produto'
 import { Link } from 'react-router-dom'
 import ComponentsHome from '../../Components/ComponentHome'
 import ConteinerImgHome from '../../Components/ConteinerImgHome'
+import Comhome from '../../Components/Produto/ComponentsOfHome/comhome'
+import ImgFooter from '../../../public/image/banner-matriz-04 1imgFooter.svg'
+
 
 const Thubnail = styled.img`
   width: 80vw;
   height: auto ;
   margin-bottom:50px ;
-  margin-left: 150px; 
+  border: none;
+`
+const ThubnailFooter = styled.img`
+  width: 80vw;
+  height: auto ;
+  margin-bottom:50px ;
   border: none;
 `
 
+const ContainerGeral = styled.div`
+display: flex;
+flex-direction: column;
+background-color: #e7e5e5c0;
+justify-content: center;
+align-items: center;
+
+`
+
+const ContainerSub = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 0px 0px 10px 10px;
+`
 
 const Container = styled.div`
   display: flex;
@@ -23,45 +49,33 @@ const Container = styled.div`
   height: 200px;
   gap:30px;
   margin: 40px;
-  margin-left: 150px;
 `
 
-const ImagemContainer = styled.img`
-  width: 160px;
-  height:150px;
-  position: relative ;
-  bottom:5px ;
-  left: 5px;
-  border-radius: 15px;  
-`
-const TitleMenu = styled.p`
-  color: black;
-  font-weight: 600;
-  position: relative;
-  right: 50px;
-  bottom: 10px;
-`
-
-const ContainerMenu = styled.div`
-  width: 150px;
-  height: 150px;
-  background-color: #FFC004;
-  border-radius: 15px;
+const ContOferta = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 1000px;
+  margin: 40px;
+  background-color: #fff;
+`;
+const ContainerOfertas = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 200px;
+  gap:30px;
+  margin: 40px;
+  margin-left: 150px;
+  margin-top: 500px;
+  background-color: grey;
 `
-
 const Div = styled.div`
-  /* background-color: #e90909; */
   width: 300px;
   height:150px;
   background-image: url('../../../public/ImagemHome/Rectangle 10.svg');
-`
-const ImagensHome = styled.img`
-  width:100%;
-  height:100%;
 `
 
 const ConteinerFotos = styled.div` //conteiner que se refere as fotos da home
@@ -71,7 +85,6 @@ const ConteinerFotos = styled.div` //conteiner que se refere as fotos da home
   justify-content: center;
   gap:20px;
   border-bottom: 1px solid #000;
-  margin-left: 150px;
 `
 const ConteinerFotosMenores = styled.div` // div que está dentro de ConteinerFotos**
   width: 700px;
@@ -87,7 +100,7 @@ const ConteinerFotosMenores = styled.div` // div que está dentro de ConteinerFo
 
 export default function Home() {
   const [imghome, setImghome] = useState([]);
-  const [imgconteiner, setImgconteiner] = useState([])
+  const [chome, setChome] = useState([]);
 
   useEffect(() => {
     const url = '/imagemHome';
@@ -98,18 +111,20 @@ export default function Home() {
     })
   }, [])
 
+
   useEffect(() => {
-    const url = '/imgconteinerhome';
+    const url = '/ofertashome';
 
     api.get(url)
     .then((response) => {
-      console.log(response)
-     setImgconteiner(response.data)
+    console.log(response)
+    setChome(response.data)
     })
-  }, [])
+},[])
 
   return (
-    <>
+    <ContainerGeral>
+      <ContainerSub>
     <Thubnail src={Banner}/>
     <Container>
     {
@@ -124,26 +139,24 @@ export default function Home() {
       </Container>
     <ConteinerFotos>
         <ConteinerFotosMenores>
-        {/* {
-          imgconteiner.map(imgHomeHome => {
-            return (<ConteinerImgHome
-            key={imgHomeHome.id} 
-            imgconteiner={imgHomeHome}
-            />)
-          })
-        } */}
         </ConteinerFotosMenores>
         <Div/>
     </ConteinerFotos>
-    <Container>
-      <Link to={'/produto/detalhes_produtos'}>
-      <ProdutoHome>
-        
-      </ProdutoHome>
-      </Link>
-      <ProdutoHome></ProdutoHome>
-      <ProdutoHome></ProdutoHome>
-    </Container>
-    </>
+      <ContOferta>
+         {
+           chome.map(ofertashome=> {
+             return (<Comhome
+               key={ofertashome.id}
+               chome={ofertashome}
+ 
+             />)
+           })
+         }
+         </ContOferta>
+         <Link to={'/produtos'}>
+         <ThubnailFooter src={ImgFooter}/>
+         </Link>
+         </ContainerSub>
+    </ContainerGeral>
   )
 }

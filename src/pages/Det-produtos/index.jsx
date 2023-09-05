@@ -4,34 +4,54 @@ import ListDetalhes from '../../Components/Detalhes'
 import ProdutoHome from '../../Components/Produto'
 import api from '../../Server/api'
 import { useParams } from 'react-router-dom'
+import Comsugestao from '../../Components/Produto/ComponentsSugestao/comsugestao'
 
 const ConteinerGlobal = styled.div`
-    width: 100%;
-    height: 300px;
-    background-color: aquamarine;
-    display: grid;
-    grid-template-columns: 15px 15px 15px;
-    grid-template-rows:60px 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e5e5c0;
+  justify-content: center;
+  align-items: center;
+
 
 `
-const ConteinerSugestao = styled.div`   
+const ContainerSub = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 0px 0px 10px 10px;
+`
+
+
+const ContSugestao = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 80%;
-  height: 200px;
-  gap:30px;
-  margin: 40px;
-  margin-left: 150px;   
-`
+  flex-wrap: wrap;
+  width: 80vw;
+  background-color: #fff;
+`;
+
 const Title = styled.p`
     font-size: 30px;
     font-weight: 500;
     margin: 20px;
-    margin-left: 230px;
+`
+
+const Containertitle = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: start;
+  border-top: 1px solid #000;
 `
 
 export default function Detalhes() {
   const [pecas, setPecas] = useState({});
+  const [sugest, setSugest] = useState([])
 
 const {id} = useParams()
 
@@ -47,29 +67,36 @@ const {id} = useParams()
     }
   },[])
 
+  useEffect(()=>{
+    const url = '/sugestoes';
+
+    api.get(url)
+      .then((response) => {
+        console.log(response)
+        setSugest(response.data)
+      })
+  },[])
+
   return (
-    <>
+    <ConteinerGlobal>
+      <ContainerSub>
        <ListDetalhes
-              key={pecas.url}
-              pecas={pecas}/>
-        
-        {/* {
-          pecas.map(peca =>{
-            return (
-              <ListDetalhes
-              key={peca.url}
-              pecas={peca}/>
-            )
-          })
-        }
-        */}
+          key={pecas.url}
+          pecas={pecas}/>
+          <Containertitle>
         <Title>Sugestões de produção:</Title>
-        <ConteinerSugestao>
-          <ProdutoHome/>
-          <ProdutoHome/>
-          <ProdutoHome/>
-          <ProdutoHome/>
-        </ConteinerSugestao>
-    </>
+        </Containertitle>
+        <ContSugestao>
+          {
+            sugest.map((sugestao)=>{
+              return(<Comsugestao
+                key={sugestao.id}
+                sugest={sugestao}
+              />)
+            })
+          }
+        </ContSugestao>
+      </ContainerSub>
+    </ConteinerGlobal>
   )
 }

@@ -86,13 +86,6 @@ const Login = styled.div`
   align-items: center;
   
 `
-const Quantidade = styled.div`
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  border-radius: 100%;
-`
-
 
 export default function Header() {
   return (

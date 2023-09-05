@@ -17,14 +17,13 @@ const ItemContainer = styled.div`
   box-shadow: 5px 10px #bebdbd;
   gap: 30px;
   border: 1px solid #0a0a0add;
+
 `;
 
 
 const Thumbnail = styled.img`
    width: 100%;
   height: 200px;
-  border: 0;
-  border-radius: 10px ;
   vertical-align: middle;
   float: left;
 `
@@ -88,17 +87,18 @@ const Subtitle = styled.h4`
   font-weight: 200;
   color: #FFC004;
 `
-export default function Comoleo({coleo}) {
+
+export default function Comhome({chome}) {
   return (
     <>
         <ItemContainer>
             <Conteiner>
-                <Thumbnail src={coleo.image} />
-                <Title>{coleo.title.substring(0,35)}</Title>
+                <Thumbnail src={chome.image} />
+                <Title>{chome.title.substring(0,35)}</Title>
                 <Subtitle>em até 3x</Subtitle>
-                <Price>{coleo.price}</Price>
+                <Price>{chome.price}</Price>
                     <ConteinerButton>
-                        <Link to={`/produto/detalhes_produtos/${coleo.id}`}>
+                        <Link to={`/produto/detalhes_produtos/${chome.id}`}>
                             <Button>Comprar</Button>
                         </Link> 
                     </ConteinerButton>

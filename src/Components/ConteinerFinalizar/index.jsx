@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const DivFinalizar = styled.div`
@@ -10,6 +11,24 @@ const DivFinalizar = styled.div`
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     padding: 10px;
+    align-items: center;
+    justify-items: flex-start;
+`
+const Container = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+`
+
+const ContainerDfinalizar = styled.div`
+    display: flex;
+    height: 250px;
+    width: 350px;
+    background-color: #FFC004;
+    justify-content: center;
     align-items: center;
 `
 
@@ -34,26 +53,32 @@ const ButtonFinalizar = styled.div`
 const PriceFinalizar = styled.p`
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   color: #FFC004;
   border-top: 1px solid #000;
 `
 const Title = styled.p`
   font-weight: 500;
   font-size: 12px;
-  margin-bottom: 5px;
+  margin-top: 100px;
   color: black;
 ` 
 
 
 export default function ConteinerPreco({pecas}) {
   return (
-    <>
+    <ContainerDfinalizar>
       <DivFinalizar>
+        <Container>
           <Title>Valor Total:</Title>
           <PriceFinalizar>{pecas.price}</PriceFinalizar>
-          <ButtonFinalizar>Fizalizar compra</ButtonFinalizar>   
+          <div>
+            <Link to={'/finalizar'}>
+              <ButtonFinalizar>Fizalizar compra</ButtonFinalizar> 
+            </Link>
+          </div>
+        </Container>
        </DivFinalizar>
-    </>
+    </ContainerDfinalizar>
   )
 }

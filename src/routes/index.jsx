@@ -13,7 +13,7 @@ import Freios from '../pages/ProdutoNilda/Freios/freios';
 import Baterias from '../pages/ProdutoNilda/Baterias/baterias';
 import Oleo from '../pages/ProdutoNilda/Oleo/oleo';
 import Ofertas from '../pages/ProdutoNilda/Ofertas/ofertas';
-
+import CompraFinalizar from '../pages/CompraFinalizada';
 const Root = () => {
     return(
         <Router>
@@ -29,6 +29,7 @@ const Root = () => {
                     <Route path="administrar/cadastrar" element={<Cadastrar/>}/>  
                     <Route path="produto/detalhes_produtos/:id" element={<Detalhes/>}/>  
                     <Route path="produto/finalizar/:id" element={<Finalizacao/>}/>  
+                    <Route path="/finalizar" element={<CompraFinalizar/>}/>  
                     <Route path="*" element={<NotFound/>}/> 
                 </Routes>
             <Footer/>

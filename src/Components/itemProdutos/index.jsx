@@ -18,7 +18,7 @@ const ItemContainer = styled.div`
   flex-direction: column;
   box-shadow: 5px 10px #bebdbd;
   gap: 30px;
-
+  border: 1px solid #0a0a0add;
 `;
 
 

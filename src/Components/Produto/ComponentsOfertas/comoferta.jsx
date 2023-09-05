@@ -16,6 +16,7 @@ const ItemContainer = styled.div`
   flex-direction: column;
   box-shadow: 5px 10px #bebdbd;
   gap: 30px;
+  border: 1px solid #000;
 
 `;
 
@@ -23,8 +24,6 @@ const ItemContainer = styled.div`
 const Thumbnail = styled.img`
    width: 100%;
   height: 200px;
-  border: 0;
-  border-radius: 10px ;
   vertical-align: middle;
   float: left;
 `

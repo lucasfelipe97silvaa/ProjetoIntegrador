@@ -4,7 +4,25 @@ import styled from 'styled-components';
 import api from '../../Server/api';
 import styles from './styles.module.css';
 
+const ContainerGeral = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e5e5c0;
+  justify-content: center;
+  align-items: center;
+`
 
+const ContainerSub = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius:10px 10px;
+  margin-top: 5px;
+`
 
 const Container = styled.div`
   max-width: 960px;
@@ -16,7 +34,6 @@ const ListContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #ccc;
   padding: 10px;
 `;
 
@@ -49,28 +66,32 @@ function Produtos() {
 
 
   return (
-    <Container>
-      <h1>Encontre seu Item</h1>
-      <input
-        className={styles.listaSearchInput}
-        type="search"
-        placeholder='Buscar - Digite aqui seu Produtos'
-        value={search}
-        onChange={(ev) => setSearch(ev.target.value)}
-      />
-      <ListContainer>
-        {
-          pecas.map(peca => {
-            return (<FourDesigner
-              key={peca.id}
-              pecas={peca}
+    <ContainerGeral>    
+      <ContainerSub>
+          <Container>
+            <h1>Encontre seu Item</h1>
+            <input
+              className={styles.listaSearchInput}
+              type="search"
+              placeholder='Buscar - Digite aqui seu Produtos'
+              value={search}
+              onChange={(ev) => setSearch(ev.target.value)}
+            />
+            <ListContainer>
+              {
+                pecas.map(peca => {
+                  return (<FourDesigner
+                    key={peca.id}
+                    pecas={peca}
 
-            />)
-          })
-        }
+                  />)
+                })
+              }
 
-      </ListContainer>
-    </Container>
+            </ListContainer>
+          </Container>
+      </ContainerSub>
+    </ContainerGeral>      
   )
 }
 
