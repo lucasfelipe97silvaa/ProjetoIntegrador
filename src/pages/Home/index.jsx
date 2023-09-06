@@ -75,7 +75,7 @@ const ContainerOfertas = styled.div`
   margin-top: 500px;
   background-color: grey;
 `
-const Div = styled.div`
+const Div = styled.img`
   width:550px ;
   height:100%;
   `
