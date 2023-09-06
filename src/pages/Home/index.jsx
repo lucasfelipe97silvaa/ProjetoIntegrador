@@ -10,6 +10,7 @@ import ImgHomeOne from '../../../image/image/Rectangle 10.svg'
 import ImgHomeTwo from '../../../image/image/Rectangle 10capamenu2.svg'
 import ImgHomeFour from '../../../image/image/Rectangle 8home3.svg'
 import ImgHomeThree from '../../../image/image/Rectangle 10home4.svg'
+import ImgHomeFive from '../../../image/image/Rectangle 17home5.svg'
 
 const Thubnail = styled.img`
   width: 80vw;
@@ -77,8 +78,8 @@ const ContainerOfertas = styled.div`
 const Div = styled.div`
   width:550px ;
   height:100%;
-  background-image: url('../../../image/image/Rectangle 17home5.svg');
-`
+  `
+
 const DivImg = styled.img`
   width:350px ;
   height:100%;
@@ -153,7 +154,7 @@ export default function Home() {
         <DivImg src={ImgHomeOne}/>
         <DivImg src={ImgHomeTwo}/>
         </ConteinerFotosMenores>
-        <Div />
+        <Div src={ImgHomeFive}/>
     </ConteinerFotos>
       <ContOferta>
          {
