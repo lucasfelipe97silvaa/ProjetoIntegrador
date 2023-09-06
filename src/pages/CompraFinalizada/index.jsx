@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import Img from '../../../public/image/verificar 1Finalizar.svg'
+import Img from '../../../image/image/verificar 1Finalizar.svg'
 
 const ConteinerGlobal = styled.div`
   display: flex;

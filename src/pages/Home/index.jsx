@@ -1,15 +1,15 @@
 import React, { useState,useEffect,} from 'react'
-import Banner from '../../../public/image/Frame 1.svg'
+import Banner from '../../../image/image/Frame 1.svg'
 import styled from 'styled-components'
 import api from '../../Server/api'
 import { Link } from 'react-router-dom'
 import ComponentsHome from '../../Components/ComponentHome'
 import Comhome from '../../Components/Produto/ComponentsOfHome/comhome'
-import ImgFooter from '../../../public/image/banner-matriz-04 1imgFooter.svg'
-import ImgHomeOne from '../../../public/ImagemHome/rectangle 10.svg'
-import ImgHomeTwo from '../../../public/ImagemHome/rectangle 10capamenu2.svg'
-import ImgHomeFour from '../../../public/ImagemHome/rectangle 8home3.svg'
-import ImgHomeThree from '../../../public/ImagemHome/rectangle 10home4.svg'
+import ImgFooter from '../../../image/image/banner-matriz-04 1imgFooter.svg'
+import ImgHomeOne from '../../../image/ImagemHome/rectangle 10.svg'
+import ImgHomeTwo from '../../../image/ImagemHome/rectangle 10capamenu2.svg'
+import ImgHomeFour from '../../../image/ImagemHome/rectangle 8home3.svg'
+import ImgHomeThree from '../../../image/ImagemHome/rectangle 10home4.svg'
 
 const Thubnail = styled.img`
   width: 80vw;
@@ -77,7 +77,7 @@ const ContainerOfertas = styled.div`
 const Div = styled.div`
   width:550px ;
   height:100%;
-  background-image: url('../../../public/ImagemHome/Rectangle 17home5.svg');
+  background-image: url('../../../image/ImagemHome/Rectangle 17home5.svg');
 `
 const DivImg = styled.img`
   width:350px ;

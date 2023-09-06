@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import imagem from '../../../public/image/logo.svg'
+import imagem from '../../../image/image/logo.svg'
 import {Menustyled} from '../../Components/Header/menu.styled'
 import { FaUser, FaCartPlus,} from 'react-icons/fa';
 import { Link } from 'react-router-dom'
