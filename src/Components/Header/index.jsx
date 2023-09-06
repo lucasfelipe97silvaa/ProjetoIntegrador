@@ -16,7 +16,7 @@ const Conteiner = styled.div`
 
 `
 const ConteinerGeral = styled.main`
-  width: 100vw;
+  width: 99vw;
   height: 100px;
   margin-bottom: 50px;
 `
