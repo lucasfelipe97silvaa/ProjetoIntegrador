@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom'
 import ComponentsHome from '../../Components/ComponentHome'
 import Comhome from '../../Components/Produto/ComponentsOfHome/comhome'
 import ImgFooter from '../../../image/image/banner-matriz-04 1imgFooter.svg'
-import ImgHomeOne from '../../../image/ImagemHome/rectangle 10.svg'
-import ImgHomeTwo from '../../../image/ImagemHome/rectangle 10capamenu2.svg'
-import ImgHomeFour from '../../../image/ImagemHome/rectangle 8home3.svg'
-import ImgHomeThree from '../../../image/ImagemHome/rectangle 10home4.svg'
+import ImgHomeOne from '../../../image/image/rectangle 10.svg'
+import ImgHomeTwo from '../../../image/image/rectangle 10capamenu2.svg'
+import ImgHomeFour from '../../../image/image/rectangle 8home3.svg'
+import ImgHomeThree from '../../../image/image/rectangle 10home4.svg'
 
 const Thubnail = styled.img`
   width: 80vw;
