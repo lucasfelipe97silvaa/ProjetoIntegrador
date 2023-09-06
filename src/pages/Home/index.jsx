@@ -4,10 +4,12 @@ import styled from 'styled-components'
 import api from '../../Server/api'
 import { Link } from 'react-router-dom'
 import ComponentsHome from '../../Components/ComponentHome'
-import ConteinerImgHome from '../../Components/ConteinerImgHome'
 import Comhome from '../../Components/Produto/ComponentsOfHome/comhome'
 import ImgFooter from '../../../public/image/banner-matriz-04 1imgFooter.svg'
-
+import ImgHomeOne from '../../../public/ImagemHome/rectangle 10.svg'
+import ImgHomeTwo from '../../../public/ImagemHome/rectangle 10capamenu2.svg'
+import ImgHomeFour from '../../../public/ImagemHome/rectangle 8home3.svg'
+import ImgHomeThree from '../../../public/ImagemHome/rectangle 10home4.svg'
 
 const Thubnail = styled.img`
   width: 80vw;
@@ -73,13 +75,17 @@ const ContainerOfertas = styled.div`
   background-color: grey;
 `
 const Div = styled.div`
-  width: 300px;
-  height:150px;
-  background-image: url('../../../public/ImagemHome/Rectangle 10.svg');
+  width:550px ;
+  height:100%;
+  background-image: url('../../../public/ImagemHome/Rectangle 17home5.svg');
+`
+const DivImg = styled.img`
+  width:350px ;
+  height:100%;
 `
 
 const ConteinerFotos = styled.div` //conteiner que se refere as fotos da home
-  width: 80%;
+  width: 100%;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -87,9 +93,8 @@ const ConteinerFotos = styled.div` //conteiner que se refere as fotos da home
   border-bottom: 1px solid #000;
 `
 const ConteinerFotosMenores = styled.div` // div que está dentro de ConteinerFotos**
-  width: 700px;
-  height: 70%;
-  background-color: black;
+  width: 100%;
+  height: 200px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -126,8 +131,9 @@ export default function Home() {
     <ContainerGeral>
       <ContainerSub>
     <Thubnail src={Banner}/>
-    <Container>
-    {
+    <Link to={'/produtos'}>
+      <Container>
+      {
           imghome.map(imagemHome => {
             return (<ComponentsHome
               key={imagemHome.id}
@@ -137,10 +143,15 @@ export default function Home() {
           })
         }
       </Container>
+    </Link>
     <ConteinerFotos>
         <ConteinerFotosMenores>
+        <DivImg src={ImgHomeThree}/>
+        <DivImg src={ImgHomeFour}/>
+        <DivImg src={ImgHomeOne}/>
+        <DivImg src={ImgHomeTwo}/>
         </ConteinerFotosMenores>
-        <Div/>
+        <Div />
     </ConteinerFotos>
       <ContOferta>
          {

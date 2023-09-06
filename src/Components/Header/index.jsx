@@ -2,32 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import imagem from '../../../public/image/logo.svg'
 import {Menustyled} from '../../Components/Header/menu.styled'
-import { FaUser, FaCartPlus,FaSistrix} from 'react-icons/fa';
+import { FaUser, FaCartPlus,} from 'react-icons/fa';
 import { Link } from 'react-router-dom'
 
 const Conteiner = styled.div`
-  width: 98.9vw;
+  width: 90vw;
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #fff;
   
 
 `
 const ConteinerGeral = styled.main`
-  width: 100%;
+  width: 100vw;
   height: 100px;
   margin-bottom: 50px;
 `
-const Cabecalho = styled.div`
-  width: 400px;
-  display: flex;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-`
-
 
 const Menu = styled.nav`
     display: flex;
@@ -44,16 +36,7 @@ const Thubnail = styled.img`
     width: 300px;
     height: 100px;
 `
-const Input = styled.input`
-    width: 400px;
-    height: 30px;
-    border: none;
-`
 
-const Button = styled.button`
-    width: 5px;
-    height: 30px;
-`
 const IconUser = styled.i`
   width: 70px;
   height: 30px;
@@ -94,10 +77,6 @@ export default function Header() {
           <Link to={"/"}>
             <Thubnail src={imagem}></Thubnail>
           </Link>
-          <Cabecalho>
-              <Input type="search" placeholder='Digite o nome do produto que procura...'></Input>
-              <Button><FaSistrix/></Button>
-          </Cabecalho>
           <Login>
              <IconUser>
                 <IconLog>
