@@ -32,10 +32,10 @@ const Menu = styled.nav`
 
 `
 
-const Thubnail = styled.div`
+const Thubnail = styled.img`
     width: 300px;
     height: 100px;
-    background-image: url('../../../image/image/logo.svg');
+
 `
 
 const IconUser = styled.i`
@@ -76,7 +76,7 @@ export default function Header() {
     <ConteinerGeral>
         <Conteiner>
           <Link to={"/"}>
-            <Thubnail src={imagem}></Thubnail>
+            <Thubnail src={imagem}/>
           </Link>
           <Login>
              <IconUser>
