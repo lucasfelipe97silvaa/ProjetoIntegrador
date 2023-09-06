@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import imagem from '../../../image/image/logo.svg'
 import {Menustyled} from '../../Components/Header/menu.styled'
 import { FaUser, FaCartPlus,} from 'react-icons/fa';
 import { Link } from 'react-router-dom'
@@ -32,9 +31,10 @@ const Menu = styled.nav`
 
 `
 
-const Thubnail = styled.img`
-    width: 300px;
+const Thubnail = styled.div`
+    width: 150px;
     height: 100px;
+    background-image: url('../../../image/image/logo.svg');
 `
 
 const IconUser = styled.i`
@@ -75,7 +75,7 @@ export default function Header() {
     <ConteinerGeral>
         <Conteiner>
           <Link to={"/"}>
-            <Thubnail src={imagem}></Thubnail>
+            <Thubnail/>
           </Link>
           <Login>
              <IconUser>
