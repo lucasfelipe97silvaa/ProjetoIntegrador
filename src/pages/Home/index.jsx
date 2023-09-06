@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom'
 import ComponentsHome from '../../Components/ComponentHome'
 import Comhome from '../../Components/Produto/ComponentsOfHome/comhome'
 import ImgFooter from '../../../image/image/banner-matriz-04 1imgFooter.svg'
+import ImgHomeOne from '../../../image/image/Rectangle 10.svg'
+import ImgHomeTwo from '../../../image/image/Rectangle 10capamenu2.svg'
+import ImgHomeFour from '../../../image/image/Rectangle 8home3.svg'
+import ImgHomeThree from '../../../image/image/Rectangle 10home4.svg'
 
 const Thubnail = styled.img`
   width: 80vw;
@@ -71,31 +75,15 @@ const ContainerOfertas = styled.div`
   background-color: grey;
 `
 const Div = styled.div`
-  width:350px ;
-  height:200px;
-  background-image: url('../../../image/image/Rectangle 10home4.svg');
-  `
-  const DivTwo = styled.div`
-  width:350px ;
-  height:200px;
-  background-image: url('../../../image/image/Rectangle 8home3.svg');
-  `
-  const DivThree = styled.div`
-  width:350px ;
-  height:200px;
-  background-image: url('../../../image/image/Rectangle 10.svg');
-  `
-  const DivFour = styled.div`
-  width:350px ;
-  height:200px;
-  background-image: url('../../../image/image/Rectangle 10capamenu2.svg');
-  `
-  const DivFive = styled.div`
   width:550px ;
   height:100%;
   background-image: url('../../../image/image/Rectangle 17home5.svg');
-  `
-
+`
+const DivImg = styled.img`
+  width:350px ;
+  height:100%;
+  
+`
 
 const ConteinerFotos = styled.div` //conteiner que se refere as fotos da home
   width: 100%;
@@ -104,7 +92,7 @@ const ConteinerFotos = styled.div` //conteiner que se refere as fotos da home
   justify-content: center;
   gap:20px;
   border-bottom: 1px solid #000;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 `
 const ConteinerFotosMenores = styled.div` // div que está dentro de ConteinerFotos**
   width: 100%;
@@ -160,12 +148,12 @@ export default function Home() {
     </Link>
     <ConteinerFotos>
         <ConteinerFotosMenores>
-        <Div/>
-        <DivTwo/>
-        <DivThree />
-        <DivFour />
+        <DivImg src={ImgHomeThree}/>
+        <DivImg src={ImgHomeFour}/>
+        <DivImg src={ImgHomeOne}/>
+        <DivImg src={ImgHomeTwo}/>
         </ConteinerFotosMenores>
-        <DivFive />
+        <Div />
     </ConteinerFotos>
       <ContOferta>
          {
