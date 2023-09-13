@@ -31,7 +31,7 @@ const ContSugestao = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 100%;
   background-color: #fff;
 `;
 

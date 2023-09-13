@@ -13,13 +13,13 @@ import ImgHomeThree from '../../../image/image/Rectangle 10home4.svg'
 import ImgHomeFive from '../../../image/image/Rectangle 17home5.svg'
 
 const Thubnail = styled.img`
-  width: 80vw;
+  width: 100%;
   height: auto ;
   margin-bottom:50px ;
   border: none;
 `
 const ThubnailFooter = styled.img`
-  width: 80vw;
+  width: 100%;
   height: auto ;
   margin-bottom:50px ;
   border: none;
@@ -48,19 +48,19 @@ const ContainerSub = styled.div`
 const Container = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 80vw;
+  width: 100%;
   height: 200px;
   gap:30px;
-  margin: 40px;
+  margin-bottom: 30px;
 `
 
 const ContOferta = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80vw;
+  width: 100%;
   height: 1000px;
-  margin: 40px;
+  margin-top: 40px;
   background-color: #fff;
 `;
 const ContainerOfertas = styled.div`
